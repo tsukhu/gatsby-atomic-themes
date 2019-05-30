@@ -1,0 +1,19 @@
+{
+	"name": "demo-app",
+	"version": "1.0.0",
+	"description": "Demo application consuming the core theme",
+	"main": "gatsby-config.js",
+	"author": "Tarun Kumar Sukhu",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"develop": "gatsby develop",
+		"build": "gatsby build"
+	},
+	"dependencies": {
+		"core-theme": "*",
+		"gatsby": "^2.7.5",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
+}

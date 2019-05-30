@@ -2,7 +2,6 @@
   "name": "gatsby-atomic-themes",
   "version": "1.0.0",
   "description": "Gatsby Themes based on Atomic components",
-  "main": "index.js",
   "author": "Tarun Kumar Sukhu",
   "license": "MIT",
   "private": true,

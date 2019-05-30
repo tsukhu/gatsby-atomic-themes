@@ -1,10 +1,24 @@
 {
   "name": "core-theme",
-  "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+	"author": "Kyle Mathews <mathews.kyle@gmail.com>",
+	"main": "index.js",
   "dependencies": {
+    "gatsby": "^2.7.5",
+    "gatsby-image": "^2.1.2",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.1",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sharp": "^2.1.2",
+    "gatsby-source-filesystem": "^2.0.37",
+    "gatsby-transformer-sharp": "^2.1.20",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+	},
+	"peerDependencies": {
     "gatsby": "^2.7.5",
     "gatsby-image": "^2.1.2",
     "gatsby-plugin-manifest": "^2.1.1",
