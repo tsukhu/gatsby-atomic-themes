@@ -1,23 +1,25 @@
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import Link from './link'
-import PropTypes from 'prop-types'
-import React from 'react'
 
-const Header = ({ siteTitle }) => (
-	<header
-		style={{
-			background: `rebeccapurple`,
-			marginBottom: `1.45rem`,
-		}}
-	>
-		<div
-			style={{
-				margin: `0 auto`,
-				maxWidth: 960,
-				padding: `1.45rem 1.0875rem`,
-			}}
-		>
-			<h1 style={{ margin: 0 }}>
-				<Link
+const useStyles = makeStyles({
+  root: {
+    flexGrow: 1,
+  },
+});
+
+const Header = ({ siteTitle }) => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static" color="primary">
+        <Toolbar>
+          <Typography variant="h6" color="inherit">
+					<Link
 					to="/"
 					style={{
 						color: `white`,
@@ -26,17 +28,11 @@ const Header = ({ siteTitle }) => (
 				>
 					{siteTitle}
 				</Link>
-			</h1>
-		</div>
-	</header>
-)
-
-Header.propTypes = {
-	siteTitle: PropTypes.string,
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 }
 
-Header.defaultProps = {
-	siteTitle: ``,
-}
-
-export default Header
+export default Header;
