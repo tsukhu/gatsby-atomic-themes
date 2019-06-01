@@ -4,8 +4,6 @@ This project is about exploring the new feature from Gatsby called "Themes". The
 
 ## Steps Followed so far
 
-1. Create a base theme using gatsby cli called "core-theme"
-2. Create another sub project called "demo-app".
-
--	Add the dependencies for `gatsby`,`react`,`react-dom`,`core-theme`
-- Create a file gatsby-config.js and add `core-theme` as an experimental dependency
+1. A base theme using gatsby cli called "core-theme" - This provides the base gastby starter related configuration
+2. A material-ui theme called 'mui-theme'
+3. A demo app which uses these themes and focuses only on customization and the actual business application

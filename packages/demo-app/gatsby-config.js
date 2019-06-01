@@ -1,3 +1,3 @@
 module.exports = {
-  __experimentalThemes: ['core-theme']
+  __experimentalThemes: ['core-theme','mui-theme']
 };

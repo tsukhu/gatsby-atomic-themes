@@ -1,0 +1,30 @@
+{
+  "name": "mui-theme",
+  "version": "1.0.0",
+  "description": "Material UI Theme",
+  "main": "index.js",
+  "author": "Tarun Kumar Sukhu",
+	"license": "MIT",
+	"dependencies": {
+    "gatsby": "^2.7.5",
+    "gatsby-plugin-compile-es6-packages": "^1.1.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "peerDependencies": {
+		"@material-ui/core": "^4.0.1",
+    "@material-ui/styles": "^4.0.1",
+    "gatsby": "^2.7.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.0.1",
+    "@material-ui/styles": "^4.0.1",
+    "prettier": "^1.17.1"
+  }
+}

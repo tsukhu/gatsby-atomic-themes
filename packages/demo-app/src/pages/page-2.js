@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import { Layout, SEO } from 'core-theme';
+import { SEO } from 'core-theme';
+import { Layout, Link } from 'mui-theme';
 
 const SecondPage = () => (
 	<Layout>

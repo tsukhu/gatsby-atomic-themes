@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'gatsby';
 
-import { Layout, Image, SEO } from 'core-theme';
+import { Image, SEO } from 'core-theme';
+import { Link, Layout } from 'mui-theme';
 
 const IndexPage = () => (
 	<Layout>

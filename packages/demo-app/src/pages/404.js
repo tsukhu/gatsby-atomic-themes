@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { Layout, SEO } from 'core-theme';
+import { SEO } from 'core-theme';
+import { Layout } from 'mui-theme';
 
 const NotFoundPage = () => (
 	<Layout>
