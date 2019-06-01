@@ -225,9 +225,9 @@ export default {
 			active: 'rgba(0, 0, 0, 0.54)',
 		},
 		primary: {
-			main: '#663399',
-			light: 'rgb(132, 91, 173)',
-			dark: 'rgb(71, 35, 107)',
+			main: '#3f51b5',
+			light: 'rgb(101, 115, 195)',
+			dark: 'rgb(44, 56, 126)',
 			contrastText: '#fff',
 		},
 	},
