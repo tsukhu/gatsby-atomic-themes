@@ -10,6 +10,8 @@ The idea is the explore the possibility to break down the gatsby site creating i
 
 The demo site is available [here](https://gatsby-atomic-themes.netlify.com/)
 
+![Demo Site](./images/theme_one.PNG)
+
 ## Structure
 
 1. Yarn workspaces used so that we are able to maintain the Gatsby infrastructure pieces as atomic themes all in one place. This also gives us the ability to see the changes like using the `demo-app` workspace without having to go through the entire process of publishing the npm module and then testing whether it works.
