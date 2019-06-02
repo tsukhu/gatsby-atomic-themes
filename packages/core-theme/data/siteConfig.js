@@ -5,5 +5,4 @@ module.exports = {
 	pathPrefix: '/',
 	background_color: '#663399',
 	theme_color: '#663399',
-	display: '#663399',
 }
