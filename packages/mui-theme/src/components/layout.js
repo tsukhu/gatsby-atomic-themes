@@ -44,10 +44,10 @@ const Layout = ({ children }) => {
 					<Header siteTitle={data.site.siteMetadata.title} />
 					<Container maxWidth="md" className={classes.root}>
 						<main>{children}</main>
-						<footer>
-							<Footer />
-						</footer>
 					</Container>
+					<footer>
+						<Footer />
+					</footer>
 				</>
 			)}
 		/>

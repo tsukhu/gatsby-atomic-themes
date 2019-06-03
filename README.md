@@ -26,6 +26,7 @@ The demo site is available [here](https://gatsby-atomic-themes.netlify.com/)
    - Derived from two themes - `core-theme` and `mui-theme`
 	 - The `core-theme` has been customized using the theme options to provide the app specific site metadata
 	 - Overrides the `mui-theme` by setting design tokens for defining the palette. The current application has been derived from the GatsbyJS default starter and it would be appropriate if it used the same palette primary colors. For this all we need to do is override the `mui-theme` file called `custom-theme.js` and override the palette colors appropriately.
+	 - Implements `Component Shadowing` - At present the `Footer` component of the `mui-theme` has been shadowed
 
 ## Running the Application
 
