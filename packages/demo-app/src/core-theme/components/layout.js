@@ -11,8 +11,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
 
-import Header from './header'
-import Footer from './footer'
+import { Header, Footer } from 'mui-theme';
 
 const useStyles = makeStyles({
 	root: {

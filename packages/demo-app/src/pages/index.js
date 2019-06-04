@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { Image, SEO } from 'core-theme';
-import { Link, Layout } from 'mui-theme';
+import { Layout, Image, SEO } from 'core-theme';
+import Link from '../components/link';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
