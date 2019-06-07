@@ -1,5 +1,5 @@
 {
-	"name": "mui-theme",
+	"name": "@gatsby-themes/mui",
 	"version": "1.0.0",
 	"description": "Material UI Theme",
 	"main": "index.js",

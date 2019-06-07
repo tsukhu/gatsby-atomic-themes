@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { SEO, Layout } from 'core-theme';
+import { SEO, Layout } from '@gatsby-themes/core';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 

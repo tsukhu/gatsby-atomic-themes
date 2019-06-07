@@ -8,6 +8,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
+import { Link } from 'gatsby';
 
 const Layout = ({ children }) => (
 	<StaticQuery

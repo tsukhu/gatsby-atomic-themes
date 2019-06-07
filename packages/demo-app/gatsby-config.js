@@ -3,7 +3,7 @@ const config = require('./data/siteConfig.js')
 module.exports = {
   __experimentalThemes: [
 		{
-      resolve: 'core-theme',
+      resolve: '@gatsby-themes/core',
       options: {
 				siteMetadata: {
 					title: config.siteTitle,
@@ -11,5 +11,5 @@ module.exports = {
 				},
 				pathPrefix: config.pathPrefix
       },
-    },'mui-theme']
+    },'@gatsby-themes/mui']
 };

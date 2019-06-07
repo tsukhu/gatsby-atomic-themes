@@ -18,7 +18,7 @@ module.exports = themeOptions => {
 			{
 				resolve: `gatsby-plugin-compile-es6-packages`,
 				options: {
-					modules: ['core-theme'],
+					modules: ['@gatsby-themes/core'],
 				},
 			},
 			`gatsby-plugin-react-helmet`,
