@@ -21,7 +21,7 @@ The demo site is available [here](https://gatsby-atomic-themes.netlify.com/)
    - Using the @gatsby-themes/mui , all the material UI setup, ssr and browser configuration, theming is all configured for you and you can simply start building the application specific pieces.
 
 > With the advent of `Gatsby Themes` we now have the ability to have the core ui framework be seemlessly integrated with the Gatsby eco-system. While this project focusses on `material-ui` , this same concept can be extended to support other ui frameworks like emotion,styled components, aphrodite etc.
-4. An emotion theme called `@gatsby\emotion`. We can now easily have a project where we can utilize material-ui and emotion together. See the `demo-app` project for details.
+4. An emotion theme called `@gatsby-themes/emotion`. We can now easily have a project where we can utilize material-ui and emotion together. See the `demo-app` project for details.
 
 4. A demo app which uses these themes and focuses only on customization and the actual business application
 
