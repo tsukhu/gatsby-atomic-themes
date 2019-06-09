@@ -5,11 +5,11 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => createStyles({
 	root: {
-		position: 'absolute',
+		position: 'relative',
 		bottom: 0,
 		backgroundColor: theme.palette.primary.main,
 		color: 'white',
-		width: '100vw'
+//		width: '100vw'
 	},
 	link: {
 		color: '#FAFA00'
