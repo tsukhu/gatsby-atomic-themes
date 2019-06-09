@@ -35,9 +35,6 @@ const IndexPage = () => {
 			<Typography variant="body1" component="p" gutterBottom>
 				<Link to="/page-2/">Go to page 2</Link>
 			</Typography>
-			<Typography variant="body1" component="p" gutterBottom>
-				<Link to="/page-3/">About Emotion</Link>
-			</Typography>
 		</Layout>
 	);
 };

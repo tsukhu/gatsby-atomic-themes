@@ -13,8 +13,7 @@
 		"gatsby-plugin-material-ui": "^2.0.1",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"react-helmet": "^5.2.1"
+		"react-dom": "^16.8.6"
 	},
 	"peerDependencies": {
 		"@material-ui/core": "^4.0.1",
@@ -23,8 +22,7 @@
 		"gatsby-plugin-material-ui": "^2.0.1",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
-		"react-dom": "^16.8.6",
-		"react-helmet": "^5.2.1"
+		"react-dom": "^16.8.6"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.4.5",

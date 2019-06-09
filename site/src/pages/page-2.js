@@ -1,7 +1,8 @@
 import React from 'react';
 
-import { Layout, Image, SEO } from '@gatsby-themes/core';
+import { SEO, Layout } from '@gatsby-themes/core';
 import Link from '../components/link';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 
@@ -10,36 +11,27 @@ const useStyles = makeStyles({
 		fontWeight: 'bold'
 	}
 });
-const IndexPage = () => {
+const SecondPage = () => {
 	const classes = useStyles();
 	return (
 		<Layout>
-			<SEO title="Home" />
+			<SEO title="Page two" />
 			<Typography
 				variant="h4"
 				gutterBottom
 				color="primary"
 				className={classes.heading}
 			>
-				Hi people
+				Hi from the second page
 			</Typography>
 			<Typography variant="body1" component="p" gutterBottom>
-				Welcome to your new Gatsby site.
+				Welcome to page 2
 			</Typography>
 			<Typography variant="body1" component="p" gutterBottom>
-				Now go build something great.
-			</Typography>
-			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-				<Image />
-			</div>
-			<Typography variant="body1" component="p" gutterBottom>
-				<Link to="/page-2/">Go to page 2</Link>
-			</Typography>
-			<Typography variant="body1" component="p" gutterBottom>
-				<Link to="/page-3/">About Emotion</Link>
+				<Link to="/">Go back to the homepage</Link>
 			</Typography>
 		</Layout>
 	);
 };
 
-export default IndexPage;
+export default SecondPage;

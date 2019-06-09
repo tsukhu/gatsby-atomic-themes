@@ -1,15 +1,18 @@
-const config = require('./data/siteConfig.js')
+const config = require('./data/siteConfig.js');
 
 module.exports = {
-  __experimentalThemes: [
+	__experimentalThemes: [
 		{
-      resolve: '@gatsby-themes/core',
-      options: {
+			resolve: '@gatsby-themes/core',
+			options: {
 				siteMetadata: {
 					title: config.siteTitle,
-					description: config.siteDescription,
+					description: config.siteDescription
 				},
 				pathPrefix: config.pathPrefix
-      },
-    },'@gatsby-themes/mui']
+			}
+		},
+		'@gatsby-themes/mui',
+		'@gatsby-themes/emotion'
+	]
 };
