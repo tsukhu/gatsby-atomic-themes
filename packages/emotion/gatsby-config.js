@@ -1,3 +1,11 @@
 module.exports = {
-	plugins: [`gatsby-plugin-emotion`]
+	plugins: [
+		{
+			resolve: `gatsby-plugin-compile-es6-packages`,
+			options: {
+				modules: ['@gatsby-themes/emotion']
+			}
+		},
+		`gatsby-plugin-emotion`
+	]
 };
