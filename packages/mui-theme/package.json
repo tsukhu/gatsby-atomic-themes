@@ -38,5 +38,12 @@
 	"scripts": {
 		"storybook":  "cross-env NODE_ENV=production start-storybook -p 6006 -s static",
 		"build-storybook": "cross-env NODE_ENV=production build-storybook -s static"
-	}
+	},
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/ERS-HCL/gatsby-atomic-themes"
+  },
+  "bugs": {
+    "url": "https://github.com/ERS-HCL/gatsby-atomic-themes/issues"
+  }
 }
