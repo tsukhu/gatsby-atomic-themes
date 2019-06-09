@@ -1,7 +1,20 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Container from '@material-ui/core/Container';
+import { makeStyles } from '@material-ui/core/styles'
 import { css } from '@emotion/core';
+
+
+const useStyles = makeStyles({
+	root: {
+		margin: '3rem auto',
+		maxWidth: 600,
+		display: 'flex',
+		flexDirection: 'column',
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+})
 
 const UserWrapper = styled.div`
 	display: flex;
@@ -53,9 +66,11 @@ const User = (props) => (
 	</UserWrapper>
 );
 
-export default () => (
-	<Container>
-		<h1 css={underline}>About Emotion</h1>
+const About = ({ siteTitle }) => {
+	const classes = useStyles()
+	return (
+	<Container className={classes.root}>
+		<h1 css={underline}>About Emotion (Shadow Component)</h1>
 		<p>Emotion is uber cool</p>
 		<User
 			username="Jane Doe"
@@ -68,4 +83,6 @@ export default () => (
 			excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
 		/>
 	</Container>
-);
+)};
+
+export default About;
