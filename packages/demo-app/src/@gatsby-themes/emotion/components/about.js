@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Container from '@material-ui/core/Container';
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles';
+import { palette, spacing, typography } from '@material-ui/system';
+import { useTheme } from '@material-ui/styles';
 import { css } from '@emotion/core';
-
 
 const useStyles = makeStyles({
 	root: {
@@ -12,9 +13,9 @@ const useStyles = makeStyles({
 		display: 'flex',
 		flexDirection: 'column',
 		alignItems: 'center',
-		justifyContent: 'center',
-	},
-})
+		justifyContent: 'center'
+	}
+});
 
 const UserWrapper = styled.div`
 	display: flex;
@@ -44,11 +45,17 @@ const Description = styled.div`
 `;
 
 const Username = styled.h2`
+	${palette};
+	${typography};
+	${spacing};
 	margin: 0 0 12px 0;
 	padding: 0;
 `;
 
 const Excerpt = styled.p`
+	${palette};
+	${typography};
+	${spacing};
 	margin: 0;
 `;
 // Using css prop provides a concise and flexible API to style the components. //
@@ -56,33 +63,42 @@ const underline = css`
 	text-decoration: underline;
 `;
 
-const User = (props) => (
-	<UserWrapper>
-		<Avatar src={props.avatar} alt="" />
-		<Description>
-			<Username>{props.username}</Username>
-			<Excerpt>{props.excerpt}</Excerpt>
-		</Description>
-	</UserWrapper>
-);
+const User = (props) => {
+	const theme = useTheme();
+	return (
+		<UserWrapper>
+			<Avatar src={props.avatar} alt="" />
+			<Description>
+				<Username color="white" bgcolor={theme.palette.primary.main} p={1}>
+					{props.username}
+				</Username>
+				<Excerpt>{props.excerpt}</Excerpt>
+			</Description>
+		</UserWrapper>
+	);
+};
 
 const About = ({ siteTitle }) => {
-	const classes = useStyles()
+	const classes = useStyles();
+	const theme = useTheme();
 	return (
-	<Container className={classes.root}>
-		<h1 css={underline}>About Emotion (Shadow Component)</h1>
-		<p>Emotion is uber cool</p>
-		<User
-			username="Jane Doe"
-			avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
-			excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		/>
-		<User
-			username="Bob Smith"
-			avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-			excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-		/>
-	</Container>
-)};
+		<Container className={classes.root}>
+			<h1 css={underline} color={theme.palette.primary.main}>
+				About Emotion (Shadow Component)
+			</h1>
+			<p color={theme.palette.primary.main}>Emotion is uber cool</p>
+			<User
+				username="Jane Doe"
+				avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
+				excerpt="I'm Jane Doe. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			/>
+			<User
+				username="Bob Smith"
+				avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+				excerpt="I'm Bob smith, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+			/>
+		</Container>
+	);
+};
 
 export default About;
