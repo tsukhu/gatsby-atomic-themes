@@ -59,8 +59,9 @@ const Excerpt = styled.p`
 	margin: 0;
 `;
 // Using css prop provides a concise and flexible API to style the components. //
-const underline = css`
+const underline = (color) => css`
 	text-decoration: underline;
+	color: ${color};
 `;
 
 const User = (props) => {
@@ -69,7 +70,7 @@ const User = (props) => {
 		<UserWrapper>
 			<Avatar src={props.avatar} alt="" />
 			<Description>
-				<Username color="white" bgcolor={theme.palette.primary.main} p={1}>
+				<Username color="white" bgcolor={theme.palette.primary.main} p={0}>
 					{props.username}
 				</Username>
 				<Excerpt>{props.excerpt}</Excerpt>
@@ -83,10 +84,10 @@ const About = ({ siteTitle }) => {
 	const theme = useTheme();
 	return (
 		<Container className={classes.root}>
-			<h1 css={underline} color={theme.palette.primary.main}>
+			<h1 css={underline(theme.palette.primary.main)} >
 				About Emotion (Shadow Component)
 			</h1>
-			<p color={theme.palette.primary.main}>Emotion is uber cool</p>
+			<p>Emotion is uber cool</p>
 			<User
 				username="Jane Doe"
 				avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
