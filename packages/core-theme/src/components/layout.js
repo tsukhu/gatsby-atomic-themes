@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
 							<Link
 								to="/"
 								style={{
-									color: `white`,
+									color: '#3f51b5',
 									textDecoration: `none`,
 								}}
 							>

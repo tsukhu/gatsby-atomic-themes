@@ -33,6 +33,7 @@ const Avatar = styled.img`
 	flex-grow: 0;
 	flex-shrink: 0;
 	flex-basis: 96px;
+	border-radius: 50%;
 	width: 96px;
 	height: 96px;
 	margin: 0;
@@ -49,7 +50,7 @@ const Username = styled.h2`
 	${typography};
 	${spacing};
 	margin: 0 0 12px 0;
-	padding: 0;
+	border-radius: 10px;
 `;
 
 const Excerpt = styled.p`
@@ -70,10 +71,10 @@ const User = (props) => {
 		<UserWrapper>
 			<Avatar src={props.avatar} alt="" />
 			<Description>
-				<Username color="white" bgcolor={theme.palette.primary.main} p={0}>
+				<Username color="white" bgcolor={theme.palette.primary.main} fontSize="10" p={1}>
 					{props.username}
 				</Username>
-				<Excerpt>{props.excerpt}</Excerpt>
+				<Excerpt p={1}>{props.excerpt}</Excerpt>
 			</Description>
 		</UserWrapper>
 	);

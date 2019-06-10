@@ -173,7 +173,7 @@ export default {
 		tonalOffset: 0.2,
 		background: {
 			paper: '#fff',
-			default: '#fafafa',
+			default: '#fff',
 		},
 		contrastThreshold: 3,
 		grey: {
