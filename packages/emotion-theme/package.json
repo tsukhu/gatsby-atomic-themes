@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/emotion",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Emotion theme",
 	"main": "index.js",
 	"repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
@@ -8,7 +8,7 @@
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
-		"gatsby": "^2.7.5",
+		"gatsby": "^2.9.4",
 		"gatsby-plugin-compile-es6-packages": "^1.1.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
@@ -16,8 +16,8 @@
 	},
 	"peerDependencies": {
 		"@emotion/core": "^10.0.10",
-		"@emotion/styled": "^10.0.11",
-		"gatsby": "^2.7.5",
+		"@emotion/styled": "^10.0.12",
+		"gatsby": "^2.9.4",
 		"gatsby-plugin-emotion": "^4.0.7",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
