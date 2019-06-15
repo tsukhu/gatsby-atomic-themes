@@ -1,4 +1,5 @@
 const config = require('./data/siteConfig.js');
+const drupalConfig = require('./data/drupalConfig.js');
 
 module.exports = {
 	__experimentalThemes: [
@@ -12,6 +13,12 @@ module.exports = {
 				pathPrefix: config.pathPrefix
 			}
 		},
-		'@gatsby-themes/emotion'
+		'@gatsby-themes/emotion',
+		{
+			resolve: '@gatsby-themes/drupal',
+			options: {
+				...drupalConfig
+			}
+		},
 	]
 };

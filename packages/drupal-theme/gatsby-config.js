@@ -10,7 +10,7 @@ module.exports = (themeOptions) => {
 			{
 				resolve: `gatsby-source-drupal`,
 				options: {
-					...themeOptions.drupal
+					...themeOptions
 				}
 			}
 		]
