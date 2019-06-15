@@ -12,3 +12,15 @@ The mui theme sets up the configuration based on the best practices recommended 
 ```bash
 yarn add `@gatsby-themes/mui`
 ```
+
+- Configure the theme in the `gatsby-config.js` file.
+
+```javascript
+module.exports = {
+	__experimentalThemes: [
+		{
+			resolve: '@gatsby-themes/mui',
+		},
+	],
+}
+```

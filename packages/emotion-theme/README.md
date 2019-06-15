@@ -12,3 +12,14 @@ The emotion theme sets up the configuration based on the best practices recommen
 ```bash
 yarn add `@gatsby-themes/emotion`
 ```
+- Configure the theme in the `gatsby-config.js` file.
+
+```javascript
+module.exports = {
+	__experimentalThemes: [
+		{
+			resolve: '@gatsby-themes/emotion',
+		},
+	],
+}
+```

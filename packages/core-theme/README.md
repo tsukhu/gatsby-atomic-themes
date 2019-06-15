@@ -13,3 +13,36 @@ The core theme sets up the configuration based on the default Gatsby Starter tem
 ```bash
 yarn add `@gatsby-themes/core`
 ```
+
+- Configure the theme in the `gatsby-config.js` file.
+
+```javascript
+const config = require('./data/siteConfig.js')
+
+module.exports = {
+	__experimentalThemes: [
+		{
+			resolve: '@gatsby-themes/core',
+			options: {
+				siteMetadata: {
+					title: config.siteTitle,
+					description: config.siteDescription,
+				},
+				pathPrefix: config.pathPrefix,
+			},
+		}
+	],
+}
+```
+
+- Add the site configuration file in the project `data/siteConfig.js`
+
+```javascript
+module.exports = {
+	siteTitle: '<replace with title>',
+  siteDescription: '<replace with description>',
+	author: '<replace with author name>',
+	pathPrefix: '/',
+}
+
+```
