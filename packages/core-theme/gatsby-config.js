@@ -9,7 +9,7 @@ module.exports = themeOptions => {
 		siteMetadata: {
 			title: config.siteTitle,
 			description: config.siteDescription,
-			author: config.authorName,
+			author: config.author,
 			...config,
 			...themeOptions.siteMetadata,
 		},

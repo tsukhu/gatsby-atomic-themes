@@ -1,0 +1,34 @@
+{
+  "name": "drupal-app",
+  "version": "1.0.0",
+  "description": "Drupal App based on drupal and emotionjs",
+  "main": "gatsby-config.js",
+  "repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
+  "author": "Tarun Kumar Sukhu",
+  "license": "MIT",
+	"private": true,
+	"scripts": {
+		"develop": "gatsby develop",
+		"build": "gatsby build"
+	},
+	"dependencies": {
+		"gatsby": "^2.9.4",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"gatsby-image": "^2.1.4",
+    "gatsby-plugin-manifest": "^2.1.1",
+    "gatsby-plugin-offline": "^2.1.3",
+    "gatsby-plugin-react-helmet": "^3.0.12",
+		"gatsby-plugin-sharp": "^2.1.5",
+		"gatsby-plugin-material-ui": "^2.0.1",
+    "gatsby-source-filesystem": "^2.0.39",
+		"gatsby-transformer-sharp": "^2.1.21",
+		"@emotion/core": "^10.0.10",
+		"@emotion/styled": "^10.0.12",
+		"gatsby-plugin-emotion": "^4.0.7",
+    "prop-types": "^15.7.2",
+		"react-helmet": "^5.2.1",
+		"@gatsby-themes/core": "*",
+		"@gatsby-themes/emotion": "*"
+	}
+}
