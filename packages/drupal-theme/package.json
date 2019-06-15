@@ -1,0 +1,25 @@
+{
+	"name": "@gatsby-themes/drupal",
+	"version": "1.0.0",
+	"description": "Drupal Theme for Gatsby",
+	"main": "index.js",
+	"repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
+	"author": "Tarun Kumar Sukhu <tksukhu@gmail.com>",
+	"license": "MIT",
+	"private": false,
+	"dependencies": {
+		"gatsby": "^2.7.5",
+		"gatsby-plugin-compile-es6-packages": "^1.1.0",
+		"gatsby-source-drupal": "^3.1.11",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	},
+	"peerDependencies": {
+		"gatsby": "^2.7.5",
+		"gatsby-source-drupal": "^3.1.11",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	}
+}
