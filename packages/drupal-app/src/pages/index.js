@@ -1,15 +1,22 @@
 import React from 'react';
+import { graphql } from 'gatsby'
+import { Layout, SEO } from '@gatsby-themes/core';
 
-import { Layout, Image, SEO } from '@gatsby-themes/core';
-
-const IndexPage = () => {
+const IndexPage = ({data}) => {
+	const topRecipe = data.topRecipe.edges[0].node;
+	const nextTwoPromotedRecipes = data.nextTwoPromotedRecipes.edges.map(
+		(edge) => edge.node
+	);
+	const nextFourPromotedRecipes = data.nextFourPromotedRecipes.edges.map(
+		(edge) => edge.node
+	);
 	return (
 		<Layout>
 			<SEO title="Home" />
 			<p>Hi from Drupal</p>
-			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-				<Image />
-			</div>
+	{/* 		<p>{topRecipe}</p>
+			<p>{nextTwoPromotedRecipes}</p>
+			<p>{nextFourPromotedRecipes}</p> */}
 		</Layout>
 	);
 };
