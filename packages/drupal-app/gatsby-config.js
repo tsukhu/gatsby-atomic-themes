@@ -13,7 +13,12 @@ module.exports = {
 				pathPrefix: config.pathPrefix
 			}
 		},
-		'@gatsby-themes/emotion',
+		{
+			resolve: '@gatsby-themes/emotion',
+			options: {
+				fullMode: true
+			}
+		},
 		{
 			resolve: '@gatsby-themes/drupal',
 			options: {

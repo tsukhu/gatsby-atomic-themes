@@ -12,14 +12,19 @@ The emotion theme sets up the configuration based on the best practices recommen
 ```bash
 yarn add `@gatsby-themes/emotion`
 ```
+
 - Configure the theme in the `gatsby-config.js` file.
+- Pass option `fullMode: true` if you want to use the emotion related theming to be setup for the entire app. In case you are using some other theme provider then do not provide any option.
 
 ```javascript
 module.exports = {
 	__experimentalThemes: [
 		{
 			resolve: '@gatsby-themes/emotion',
-		},
-	],
-}
+			options: {
+				fullMode: true
+			}
+		}
+	]
+};
 ```

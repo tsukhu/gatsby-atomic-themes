@@ -6,5 +6,5 @@ export default {
 		primaryAlt: 'rgba(0, 126, 167, 1)',
 		secondaryAlt: 'rgba(0, 168, 232, 1)'
 	},
-	fontFamily: 'Montserrat',
+	fontFamily: 'Montserrat, sans-serif',
 };

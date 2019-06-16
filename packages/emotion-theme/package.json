@@ -8,6 +8,9 @@
 	"license": "MIT",
 	"private": false,
 	"dependencies": {
+		"@emotion/core": "^10.0.10",
+		"@emotion/styled": "^10.0.12",
+		"emotion-theming": "^10.0.10",
 		"gatsby": "^2.9.4",
 		"gatsby-plugin-compile-es6-packages": "^1.1.0",
 		"prop-types": "^15.7.2",
@@ -17,6 +20,7 @@
 	"peerDependencies": {
 		"@emotion/core": "^10.0.10",
 		"@emotion/styled": "^10.0.12",
+		"emotion-theming": "^10.0.10",
 		"gatsby": "^2.9.4",
 		"gatsby-plugin-emotion": "^4.0.7",
 		"prop-types": "^15.7.2",
