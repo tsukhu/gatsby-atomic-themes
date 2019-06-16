@@ -13,17 +13,16 @@ import { Global, css } from '@emotion/core';
 import { Link } from 'gatsby';
 import tokens from '../../../tokens/theme';
 
+const globalStyles = css`
+	html,
+	body {
+		font-family: ${tokens.fontFamily};
+	}
+`;
 const Layout = ({ children }) => {
 	return (
 		<>
-			<Global
-				styles={css`
-					html,
-					body {
-						font-family: 'Montserrat';
-					}
-				`}
-			/>
+			<Global styles={globalStyles} />
 			<StaticQuery
 				query={graphql`
 					query SiteTitleQueryDrupalApp {
