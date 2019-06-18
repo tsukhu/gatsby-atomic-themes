@@ -9,7 +9,22 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
+import { css } from '@emotion/core';
+import styled from '@emotion/styled';
+
 import { Link } from 'gatsby';
+
+const Heading = styled('h1')`
+	background-color: ${(props) => props.bg};
+	color: ${(props) => props.fg};
+`;
+
+const Footer = styled('footer')`
+	border-top: 1px solid #ccc;
+	color: ${(props) => props.textColor};
+	margin-top: 50px !important;
+	padding-top: 20px;
+`;
 
 const Layout = ({ children, theme }) => {
 	return (
@@ -25,15 +40,13 @@ const Layout = ({ children, theme }) => {
 			`}
 			render={(data) => (
 				<>
-					<header>
-						<div
-							style={{
-								margin: `0 auto`,
-								maxWidth: 960,
-								padding: `1.45rem 1.0875rem`
-							}}
-						>
-							<h1 style={{ margin: 0 }}>
+					<div
+						className={css`
+							background: #ddd;
+						`}
+					>
+						<div className={css({ padding: 10 })}>
+							<Heading>
 								<Link
 									to="/"
 									style={{
@@ -43,23 +56,15 @@ const Layout = ({ children, theme }) => {
 								>
 									{data.site.siteMetadata.title}
 								</Link>
-							</h1>
+							</Heading>
+							<main>{children}</main>
+							<Footer textColor={theme.color.primaryAlt}>
+								{' '}
+								© {new Date().getFullYear()}, Built with
+								{` `}
+								<a href="https://www.gatsbyjs.org">Gatsby</a>
+							</Footer>
 						</div>
-					</header>
-					<div
-						style={{
-							margin: `0 auto`,
-							maxWidth: 960,
-							padding: `0px 1.0875rem 1.45rem`,
-							paddingTop: 0
-						}}
-					>
-						<main>{children}</main>
-						<footer>
-							© {new Date().getFullYear()}, Built with
-							{` `}
-							<a href="https://www.gatsbyjs.org">Gatsby</a>
-						</footer>
 					</div>
 				</>
 			)}
