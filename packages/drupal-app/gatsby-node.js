@@ -4,7 +4,7 @@ const path = require(`path`);
 exports.onCreateNode = ({ node, getNode, actions }) => {
 	const { createNodeField } = actions;
 	if (node.internal.type === `recipes`) {
-		const slug = `/recipes/${node.internalId}/`;
+		const slug = `/${node.internalId}/`;
 		createNodeField({
 			node,
 			name: `slug`,
