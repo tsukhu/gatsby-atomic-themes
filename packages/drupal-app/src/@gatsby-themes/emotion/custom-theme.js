@@ -1,3 +1,6 @@
+import 'typeface-pacifico';
+import 'typeface-montserrat';
+
 export default {
 	color: {
 		white: 'rgba(255, 255, 255, 1)',
