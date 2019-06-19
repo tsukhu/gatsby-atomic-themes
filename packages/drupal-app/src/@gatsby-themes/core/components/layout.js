@@ -10,21 +10,9 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
 
 import { Link } from 'gatsby';
-
-const Heading = styled('h1')`
-	background-color: ${(props) => props.bg};
-	color: ${(props) => props.fg};
-`;
-
-const Footer = styled('footer')`
-	border-top: 1px solid #ccc;
-	color: ${(props) => props.textColor};
-	margin-top: 50px !important;
-	padding-top: 20px;
-`;
+import { Heading, Footer } from '@gatsby-themes/emotion';
 
 const Layout = ({ children, theme }) => {
 	return (
