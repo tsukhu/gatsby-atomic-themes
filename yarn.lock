@@ -13447,6 +13447,11 @@ typeface-pacifico@^0.0.72:
   resolved "https://registry.yarnpkg.com/typeface-pacifico/-/typeface-pacifico-0.0.72.tgz#fa8b2005ba365b4610ac9d177e209fbecb9eb083"
   integrity sha512-LBdb5Ks9+efGNLwWJ6Emt+3yc+lugVDPNMMZM+FJ+qcP7UvtwF7HzVF404AQhp9+7CB7NU/vkSpnA53pdTFFZw==
 
+typeface-sacramento@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-sacramento/-/typeface-sacramento-0.0.72.tgz#28b7a6cb8edfd4901544984f9e377a594763f0ff"
+  integrity sha512-Q8mBHa5auQijI4x/l0eFous6VSQpVvv9I1Kgg+NxCnL0IDt89mMxp6sr+d9Xe37uIT0XW4JPbV/mwr6hm2T+Ig==
+
 ua-parser-js@^0.7.18:
   version "0.7.19"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.19.tgz#94151be4c0a7fb1d001af7022fdaca4642659e4b"

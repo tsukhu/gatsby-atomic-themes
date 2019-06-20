@@ -28,31 +28,25 @@ const Layout = ({ children, theme }) => {
 			`}
 			render={(data) => (
 				<>
-					<div
-						className={css`
-							background: #ddd;
-						`}
-					>
-						<div className={css({ padding: 10 })}>
-							<Heading>
-								<Link
-									to="/"
-									style={{
-										color: theme.color.primaryAlt,
-										textDecoration: `none`
-									}}
-								>
-									{data.site.siteMetadata.title}
-								</Link>
-							</Heading>
-							<main>{children}</main>
-							<Footer textColor={theme.color.primaryAlt}>
-								{' '}
-								© {new Date().getFullYear()}, Built with
-								{` `}
-								<a href="https://www.gatsbyjs.org">Gatsby</a>
-							</Footer>
-						</div>
+					<div>
+						<Heading>
+							<Link
+								to="/"
+								style={{
+									color: theme.color.primaryAlt,
+									textDecoration: `none`
+								}}
+							>
+								{data.site.siteMetadata.title}
+							</Link>
+						</Heading>
+						<main>{children}</main>
+						<Footer textColor={theme.color.primaryAlt}>
+							{' '}
+							© {new Date().getFullYear()}, Built with
+							{` `}
+							<a href="https://www.gatsbyjs.org">Gatsby</a>
+						</Footer>
 					</div>
 				</>
 			)}

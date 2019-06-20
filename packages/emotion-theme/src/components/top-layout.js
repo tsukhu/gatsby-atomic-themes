@@ -10,6 +10,8 @@ const globalStyles = css`
 	html,
 	body {
 		font-family: ${theme.fontFamily};
+		background-image: ${theme.backgroundImage};
+		margin: ${theme.pageMargin};
 	}
 `;
 export default function TopLayout(props) {
