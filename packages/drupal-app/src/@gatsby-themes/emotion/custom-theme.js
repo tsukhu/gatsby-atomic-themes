@@ -1,5 +1,5 @@
 import 'typeface-pacifico';
-import 'typeface-montserrat';
+import 'typeface-oswald';
 
 export default {
 	color: {
@@ -9,7 +9,7 @@ export default {
 		primaryAlt: 'rgba(0, 126, 167, 1)',
 		secondaryAlt: 'rgba(0, 168, 232, 1)'
 	},
-	fontFamily: 'Montserrat, sans-serif',
+	fontFamily: 'Oswald, sans-serif',
 	pageMargin: '50px',
 	backgroundImage: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)'
 };

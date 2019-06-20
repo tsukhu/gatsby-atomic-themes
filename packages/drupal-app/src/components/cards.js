@@ -53,14 +53,13 @@ export const cartTitle = css`
 	 {
 		text-align: center;
 		border-radius: 0px 0px 40px 40px;
-		font-family: 'Pacifico', cursive;
-		font-weight: lighter;
-		text-shadow: 3px 3px 3px #000000;
-		font-size: 18px;
-		margin-top: -90px;
-		height: 40px;
+		font-weight: normal;
+		text-shadow: 4px 4px 4px #000000;
+		font-size: 20px;
+		margin-top: -85px;
+		margin-left: 5px;
+		margin-right: 5px;
 		position: relative;
-
 		z-index: 2;
 	}
 `;
