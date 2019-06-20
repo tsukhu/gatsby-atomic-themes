@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+
 import { Layout, SEO } from '@gatsby-themes/core';
 import { Container } from '@gatsby-themes/emotion';
 import {
