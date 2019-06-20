@@ -7,17 +7,14 @@ import {
 	receipe,
 	receipeAuthor,
 	receipeBody,
-	receipeCircle,
 	receipeContainer,
 	receipeDescription,
-	receipeMedia,
-	receipeNumber,
 	receipeRead,
 	receipeShadow,
 	receipeSubtle,
-	receipeTag,
 	receipeTitle,
-	receipeUclearfix
+	receipeUclearfix,
+	receipeMedia
 } from '../components/receipe-components';
 const RecipeTemplate = ({ data }) => {
 	return (
@@ -63,7 +60,7 @@ const RecipeTemplate = ({ data }) => {
 								</ul>
 							</span>
 						</div>
-						<div>
+						<div css={receipeMedia}>
 							<Img
 								fluid={
 									data.recipes.relationships.image.relationships.imageFile
@@ -99,7 +96,7 @@ export const query = graphql`
 						imageFile {
 							localFile {
 								childImageSharp {
-									fluid(maxWidth: 470) {
+									fluid(maxWidth: 470,maxHeight: 353) {
 										...GatsbyImageSharpFluid
 									}
 								}
