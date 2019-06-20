@@ -3,18 +3,24 @@ import styled from '@emotion/styled';
 export const Heading = styled('h1')`
 	background-color: ${(props) => props.bg};
 	color: ${(props) => props.fg};
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
 `;
 
 export const Footer = styled('footer')`
 	border-top: 1px solid #ccc;
 	color: ${(props) => props.textColor};
 	margin-top: 50px !important;
+	text-align: center;
+	font-weight: bold;
 	padding-top: 20px;
 `;
 
 export const Container = styled.div((props) => ({
 	display: 'flex',
-	flexDirection: props.column && 'column'
+	flexDirection: props.column && 'column',
+	margin: props.margin || 100,
+	padding: props.padding || 0
 }));
 
 export const Card = styled('div')`

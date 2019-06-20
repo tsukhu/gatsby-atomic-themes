@@ -33,7 +33,7 @@ export const cardImage = css`
 		width: inherit;
 		height: inherit;
 		//		background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-		background-color: rgba(0, 0, 0, 0.75); // #333;
+		background-color: rgba(0, 0, 0, 0.40); // #333;
 		border-radius: 20px;
 		object-fit: cover;
 		opacity: 0.7;

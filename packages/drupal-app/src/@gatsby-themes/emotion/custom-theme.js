@@ -1,6 +1,5 @@
 import 'typeface-pacifico';
 import 'typeface-montserrat';
-import { red } from 'ansi-colors';
 
 export default {
 	color: {
@@ -11,5 +10,6 @@ export default {
 		secondaryAlt: 'rgba(0, 168, 232, 1)'
 	},
 	fontFamily: 'Montserrat, sans-serif',
-	pageMargin: '50px'
+	pageMargin: '50px',
+	backgroundImage: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)'
 };

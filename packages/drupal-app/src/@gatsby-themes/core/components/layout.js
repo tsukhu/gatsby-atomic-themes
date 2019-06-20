@@ -9,8 +9,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
-import { css } from '@emotion/core';
-
 import { Link } from 'gatsby';
 import { Heading, Footer } from '@gatsby-themes/emotion';
 
@@ -33,15 +31,18 @@ const Layout = ({ children, theme }) => {
 							<Link
 								to="/"
 								style={{
-									color: theme.color.primaryAlt,
-									textDecoration: `none`
+									color: theme.color.primary,
+									textDecoration: `none`,
+									fontFamily: 'Pacifico, cursive',
+									margin: theme.pageMargin,
+									textShadow: '3px 3px 3px #fff'
 								}}
 							>
 								{data.site.siteMetadata.title}
 							</Link>
 						</Heading>
 						<main>{children}</main>
-						<Footer textColor={theme.color.primaryAlt}>
+						<Footer textColor={theme.color.primary}>
 							{' '}
 							© {new Date().getFullYear()}, Built with
 							{` `}
