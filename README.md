@@ -8,7 +8,7 @@ The idea is the explore the possibility to break down the gatsby site creating i
 
 ## Demo
 
-The demo site is available [here](https://gatsby-atomic-themes.netlify.com/)
+The demo site is available [here](https://gatsby-atomic-themes.netlify.com/) and [here](https://gatsby-drupal-theme-app.netlify.com/)
 
 ![Demo Site](./images/theme_one.PNG)
 
