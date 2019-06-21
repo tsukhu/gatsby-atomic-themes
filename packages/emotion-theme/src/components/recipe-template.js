@@ -16,56 +16,55 @@ import {
 	Container
 } from '@gatsby-themes/emotion';
 
-const ReceipeDetailsTemplate = ({ data }) => {
+const RecipeTemplate = ({ data }) => {
+	const {
+		category,
+		title,
+		preparationTime,
+		totalTime,
+		difficulty,
+		ingredients,
+		instructions,
+		childImageSharp
+	} = data;
 	return (
 		<Container column margin={20}>
 			<div css={receipeContainer}>
 				<div css={[receipe, receipeUclearfix]}>
 					<div css={receipeBody}>
-						<span css={[receipeAuthor, receipeSubtle]}>
-							{data.recipes.relationships.category.name}
-						</span>
-						<h2 css={receipeTitle}>{data.recipes.title}</h2>
+						<span css={[receipeAuthor, receipeSubtle]}>{category}</span>
+						<h2 css={receipeTitle}>{title}</h2>
 						<span css={[receipeDescription, receipeSubtle]}>
 							<div>
 								<strong>Preparation time:</strong>
 							</div>
-							<div>{data.recipes.preparationTime} minutes</div>
+							<div>{preparationTime} minutes</div>
 							<div>
 								<strong>Cooking time:</strong>
 							</div>
-							<div>{data.recipes.totalTime} minutes</div>
+							<div>{totalTime} minutes</div>
 							<div>
 								<strong>Difficulty:</strong>
 							</div>
-							<div>{data.recipes.difficulty}</div>
+							<div>{difficulty}</div>
 						</span>
 						<div css={receipeRead}>Ingredients</div>
 						<span css={[receipeDescription]}>
 							<ul>
-								{data.recipes.ingredients &&
-									data.recipes.ingredients.map((ing, index) => (
-										<li key={index}>{ing}</li>
-									))}
+								{ingredients &&
+									ingredients.map((ing, index) => <li key={index}>{ing}</li>)}
 							</ul>
 						</span>
 						<div css={receipeRead}>Method</div>
 						<span css={[receipeDescription]}>
 							<ul>
-								{data.recipes.instructions &&
-									data.recipes.instructions
-										.split(`,`)
-										.map((i) => <li key={i}>{i}</li>)}
+								{instructions &&
+									instructions.split(`,`).map((i) => <li key={i}>{i}</li>)}
 							</ul>
 						</span>
 					</div>
 					<div css={receipeMedia}>
-						<Img
-							fluid={
-								data.recipes.relationships.image.relationships.imageFile
-									.localFile.childImageSharp.fluid
-							}
-						/>
+						<Img fluid={childImageSharp.fluid} />
 					</div>
 				</div>
 				<div css={receipeShadow} />
@@ -74,8 +73,8 @@ const ReceipeDetailsTemplate = ({ data }) => {
 	);
 };
 
-ReceipeDetailsTemplate.propTypes = {
+RecipeTemplate.propTypes = {
 	data: PropTypes.object.isRequired
 };
 
-export default ReceipeDetailsTemplate;
+export default RecipeTemplate;
