@@ -1,30 +1,27 @@
 import React from 'react';
 
 import { SEO, Layout } from '@gatsby-themes/core';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
+import styled from '@emotion/styled';
+const H4 = styled.h4(
+	{
+		fontSize: 24
+	},
+	(props) => ({ color: props.color })
+);
 
-const useStyles = makeStyles({
-	heading: {
-		fontWeight: 'bold'
-	}
-});
+const Para = styled.p(
+	{
+		fontSize: 20
+	},
+	(props) => ({ color: props.color })
+);
+
 const NotFoundPage = () => {
-	const classes = useStyles();
 	return (
 		<Layout>
 			<SEO title="404: Not found" />
-			<Typography
-				variant="h4"
-				gutterBottom
-				color="primary"
-				className={classes.heading}
-			>
-				NOT FOUND
-			</Typography>
-			<Typography variant="body1" component="p" gutterBottom>
-				You just hit a route that doesn&#39;t exist... the sadness.
-			</Typography>
+			<H4>NOT FOUND</H4>
+			<Para>You just hit a route that doesn&#39;t exist... the sadness.</Para>
 		</Layout>
 	);
 };
