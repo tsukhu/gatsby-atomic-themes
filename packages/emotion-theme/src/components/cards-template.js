@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {
-	cardsList,
-	Container,
-	ImageCard
-} from '@gatsby-themes/emotion';
+import { cardsList } from './cards';
+import { Container } from './core-components';
+import ImageCard from './image-card';
 
 const CardsTemplate = ({ data, cardClickHandler }) => {
 	return (

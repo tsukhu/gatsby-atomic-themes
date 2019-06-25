@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, SEO } from '@gatsby-themes/core';
-import CardsTemplate from '../../../components/cards-template';
+import { CardsTemplate } from '@gatsby-themes/emotion';
 import { navigate } from 'gatsby';
 
 const IndexPage = ({ data }) => {
