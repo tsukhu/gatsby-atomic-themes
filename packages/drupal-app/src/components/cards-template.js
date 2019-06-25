@@ -1,12 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-	card,
-	cardImage,
 	cardsList,
-	cartTitle,
-	titleWhite,
-	Container
+	Container,
+	ImageCard
 } from '@gatsby-themes/emotion';
 
 const CardsTemplate = ({ data, cardClickHandler }) => {
@@ -14,24 +11,16 @@ const CardsTemplate = ({ data, cardClickHandler }) => {
 		<Container column margin={20}>
 			<div css={cardsList}>
 				{data.map(({ node }) => (
-					<div
-						css={card}
-						key={node.fields.slug}
-						onClick={() => cardClickHandler(node.fields.slug)}
-					>
-						<div css={cardImage}>
-							<img
-								src={
-									node.relationships.image.relationships.imageFile.localFile
-										.childImageSharp.resize.src
-								}
-								alt={node.title}
-							/>
-						</div>
-						<div css={[cartTitle, titleWhite]}>
-							<p>{node.title}</p>
-						</div>
-					</div>
+					<ImageCard
+						key={node.title}
+						slug={node.fields.slug}
+						title={node.title}
+						imageSrc={
+							node.relationships.image.relationships.imageFile.localFile
+								.childImageSharp.resize.src
+						}
+						cardClickHandler={cardClickHandler}
+					/>
 				))}
 			</div>
 		</Container>

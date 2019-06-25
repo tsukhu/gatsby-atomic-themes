@@ -18,7 +18,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions;
 
-	const recipeTemplate = path.resolve(`src/templates/recipe.js`);
+	const recipeTemplate = 	path.join(__dirname, `src`, `templates`, `recipe.js`);
+	const landingPageTemplate = 	path.join(__dirname, `src`, `templates`, `index.js`);
+
+	createPage({
+		path: '/',
+		component: landingPageTemplate
+	});
+
 	// Query for recipe nodes to use in creating pages.
 	return graphql(
 		`
