@@ -10,6 +10,7 @@ module.exports = ({ config }) => {
   config.module.rules[0].use[0].options.presets = [
     require.resolve("@babel/preset-react"),
     require.resolve("@babel/preset-env"),
+    require.resolve("@emotion/babel-preset-css-prop"),
   ]
 
   config.module.rules[0].use[0].options.plugins = [
@@ -17,6 +18,7 @@ module.exports = ({ config }) => {
     require.resolve("@babel/plugin-proposal-class-properties"),
     // use babel-plugin-remove-graphql-queries to remove static queries from components when rendering in storybook
     require.resolve("babel-plugin-remove-graphql-queries"),
+    require.resolve("babel-plugin-emotion"),
   ]
 
   // Prefer Gatsby ES6 entrypoint (module) over commonjs (main) entrypoint

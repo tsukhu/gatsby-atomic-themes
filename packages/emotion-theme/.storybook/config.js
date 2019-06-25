@@ -1,5 +1,9 @@
-import { configure } from "@storybook/react"
+import React from 'react';
+import { configure, addDecorator } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
+import { ThemeProvider } from 'emotion-theming';
+import { Global, css } from '@emotion/core';
+import theme from '../src/theme'
 
 // automatically import all files ending in *.stories.js
 // highlight-next-line
@@ -23,6 +27,12 @@ global.__PATH_PREFIX__ = ""
 window.___navigate = pathname => {
   action("NavigateTo:")(pathname)
 }
+
+addDecorator((story) => (
+  <ThemeProvider theme={theme}>
+    {story()}
+  </ThemeProvider>
+))
 
 configure(loadStories, module)
 // highlight-end

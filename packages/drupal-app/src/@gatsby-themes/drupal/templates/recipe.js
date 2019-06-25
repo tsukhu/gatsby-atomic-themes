@@ -26,6 +26,7 @@ const RecipePage = ({ data }) => {
 		childImageSharp:
 			relationships.image.relationships.imageFile.localFile.childImageSharp
 	};
+
 	return (
 		<Layout>
 			<SEO title={data.recipes.title} />
