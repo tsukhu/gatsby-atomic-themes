@@ -11,7 +11,7 @@
 		"@emotion/core": "^10.0.10",
 		"@emotion/styled": "^10.0.12",
 		"emotion-theming": "^10.0.10",
-		"gatsby": "^2.9.4",
+		"gatsby": "^2.10.4",
 		"gatsby-plugin-compile-es6-packages": "^1.1.0",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
@@ -21,10 +21,22 @@
 		"@emotion/core": "^10.0.10",
 		"@emotion/styled": "^10.0.12",
 		"emotion-theming": "^10.0.10",
-		"gatsby": "^2.9.4",
+		"gatsby": "^2.10.4",
 		"gatsby-plugin-emotion": "^4.0.7",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
-		"react-dom": "^16.8.6"
+		"react-dom": "^16.8.6",
+		"@babel/core": "^7.4.5",
+		"@storybook/addon-actions": "^5.0.11",
+		"@storybook/addon-links": "^5.0.11",
+		"@storybook/addons": "^5.0.11",
+		"@storybook/react": "^5.0.11",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-remove-graphql-queries": "^2.6.3",
+		"cross-env": "^5.2.0"
+	},
+	"scripts": {
+		"storybook": "cross-env NODE_ENV=production start-storybook -p 6006 -s static",
+		"build-storybook": "cross-env NODE_ENV=production build-storybook -s static"
 	}
 }
