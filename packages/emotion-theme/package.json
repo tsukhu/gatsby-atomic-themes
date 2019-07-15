@@ -34,14 +34,14 @@
 	},
 	"devDependencies": {
 		"cross-env": "^5.2.0",
-		"@emotion/babel-preset-css-prop": "^10.0.9",
-		"babel-plugin-emotion": "^10.0.13",
+		"@emotion/babel-preset-css-prop": "^10.0.14",
+		"babel-plugin-emotion": "^10.0.14",
 		"@storybook/addon-actions": "^5.1.9",
 		"@storybook/addon-links": "^5.1.9",
 		"@storybook/addons": "^5.1.9",
 		"@storybook/react": "^5.1.9",
-		"@babel/core": "^7.4.5",
+		"@babel/core": "^7.5.4",
 		"babel-loader": "^8.0.6",
-		"babel-plugin-remove-graphql-queries": "^2.6.3"
+		"babel-plugin-remove-graphql-queries": "^2.7.2"
 	}
 }
