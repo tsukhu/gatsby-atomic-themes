@@ -20,7 +20,7 @@ yarn add `@gatsby-themes/core`
 const config = require('./data/siteConfig.js')
 
 module.exports = {
-	__experimentalThemes: [
+	plugins: [
 		{
 			resolve: '@gatsby-themes/core',
 			options: {
@@ -30,7 +30,7 @@ module.exports = {
 				},
 				pathPrefix: config.pathPrefix,
 			},
-		}
+		},
 	],
 }
 ```
@@ -40,9 +40,8 @@ module.exports = {
 ```javascript
 module.exports = {
 	siteTitle: '<replace with title>',
-  siteDescription: '<replace with description>',
+	siteDescription: '<replace with description>',
 	author: '<replace with author name>',
 	pathPrefix: '/',
 }
-
 ```

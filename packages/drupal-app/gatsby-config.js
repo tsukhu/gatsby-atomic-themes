@@ -2,7 +2,7 @@ const config = require('./data/siteConfig.js');
 const drupalConfig = require('./data/drupalConfig.js');
 
 module.exports = {
-	__experimentalThemes: [
+	plugins: [
 		{
 			resolve: '@gatsby-themes/core',
 			options: {
@@ -14,10 +14,7 @@ module.exports = {
 			}
 		},
 		{
-			resolve: '@gatsby-themes/emotion',
-			options: {
-				fullMode: true
-			}
+			resolve: '@gatsby-themes/emotion-recipe-theme'
 		},
 		{
 			resolve: '@gatsby-themes/drupal',

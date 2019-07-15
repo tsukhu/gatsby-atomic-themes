@@ -13,8 +13,9 @@ import {
 	receipeTitle,
 	receipeUclearfix,
 	receipeMedia,
-	Container
-} from '@gatsby-themes/emotion';
+} from './recipe-components';
+
+import {Container} from './core-components';
 
 const RecipeTemplate = ({ data }) => {
 	const {

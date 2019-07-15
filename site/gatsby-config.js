@@ -1,7 +1,7 @@
 const config = require('./data/siteConfig.js')
 
 module.exports = {
-  __experimentalThemes: [
+  plugins: [
 		{
       resolve: '@gatsby-themes/core',
       options: {

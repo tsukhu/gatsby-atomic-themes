@@ -18,7 +18,7 @@ yarn add `@gatsby-themes/drupal`
 const drupalConfig = require('./data/drupalConfig.js');
 
 module.exports = {
-	__experimentalThemes: [
+	plugins: [
 		{
 			resolve: '@gatsby-themes/drupal',
 			options: {

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Layout, SEO } from '@gatsby-themes/core';
-import { RecipeTemplate } from '@gatsby-themes/emotion';
+import { RecipeTemplate } from '@gatsby-themes/emotion-recipe-theme';
 
 const RecipePage = ({ data }) => {
 	const { recipes } = data;

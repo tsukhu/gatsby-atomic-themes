@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 import { Link } from 'gatsby';
-import { Heading, Footer } from '@gatsby-themes/emotion';
+import { Heading, Footer } from '@gatsby-themes/emotion-recipe-theme';
 
 const Layout = ({ children, theme }) => {
 	return (

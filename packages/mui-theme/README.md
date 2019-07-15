@@ -17,7 +17,7 @@ yarn add `@gatsby-themes/mui`
 
 ```javascript
 module.exports = {
-	__experimentalThemes: [
+	plugins: [
 		{
 			resolve: '@gatsby-themes/mui',
 		},
