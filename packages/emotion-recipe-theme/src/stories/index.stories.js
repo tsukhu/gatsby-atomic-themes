@@ -3,12 +3,10 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { cardsList } from '../components/cards';
-import { Global, css } from '@emotion/core';
 import ImageCard from '../components/image-card';
 import RecipeTemplate from '../components/recipe-template';
 import recipeContent from './recipeContent';
 import cardListContent from './cardListContent';
-import { sub, HeroImage } from '../components/lemon-sparkling';
 
 storiesOf('Emotion Receipe UI Theme', module)
 	.add('Image Card', () => (
