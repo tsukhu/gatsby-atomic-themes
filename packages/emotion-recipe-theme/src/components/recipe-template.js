@@ -17,6 +17,15 @@ import {
 
 import { Container } from './core-components';
 
+const recipeSection = ({ title, items }) => (
+	<>
+		<div css={receipeRead}>{title}</div>
+		<span css={receipeDescription}>
+			<ul>{items && items.map((i,index) => <li key={index}>{i}</li>)}</ul>
+		</span>
+	</>
+);
+
 const RecipeTemplate = ({ data }) => {
 	const {
 		category,
@@ -49,20 +58,8 @@ const RecipeTemplate = ({ data }) => {
 							</div>
 							<div>{difficulty}</div>
 						</span>
-						<div css={receipeRead}>Ingredients</div>
-						<span css={receipeDescription}>
-							<ul>
-								{ingredients &&
-									ingredients.map((ing, index) => <li key={index}>{ing}</li>)}
-							</ul>
-						</span>
-						<div css={receipeRead}>Method</div>
-						<span css={receipeDescription}>
-							<ul>
-								{instructions &&
-									instructions.split(`,`).map((i) => <li key={i}>{i}</li>)}
-							</ul>
-						</span>
+						{recipeSection({title: 'Ingredients', items: ingredients})}
+						{recipeSection({title: 'Method', items: instructions.split(`,`)})}
 					</div>
 					<div css={receipeMedia}>
 						<Img fluid={childImageSharp.fluid} />
