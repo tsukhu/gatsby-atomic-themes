@@ -1,5 +1,15 @@
 import { graphql } from 'gatsby';
 // place holder receipe
+
+const RecipePage = () => {
+	return (
+		<>Place holder component</>
+	);
+};
+
+
+export default RecipePage;
+
 export const query = graphql`
 	query($slug: String!) {
 		recipes(fields: { slug: { eq: $slug } }) {
