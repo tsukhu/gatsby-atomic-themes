@@ -112,6 +112,4 @@ export const receipeUclearfix = css`
 	&:after {
 		clear: both;
 	}
-
-	*zoom: 1;
 `;

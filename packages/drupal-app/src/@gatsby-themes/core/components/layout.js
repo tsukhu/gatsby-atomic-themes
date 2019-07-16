@@ -33,7 +33,7 @@ const Layout = ({ children, theme }) => {
 								style={{
 									color: theme.color.primary,
 									textDecoration: `none`,
-									fontFamily: 'Pacifico, cursive',
+									fontFamily: 'cursive',
 									margin: theme.pageMargin,
 									textShadow: '3px 3px 3px #fff'
 								}}

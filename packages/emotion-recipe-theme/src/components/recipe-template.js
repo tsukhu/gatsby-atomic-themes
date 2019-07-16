@@ -12,10 +12,10 @@ import {
 	receipeSubtle,
 	receipeTitle,
 	receipeUclearfix,
-	receipeMedia,
+	receipeMedia
 } from './recipe-components';
 
-import {Container} from './core-components';
+import { Container } from './core-components';
 
 const RecipeTemplate = ({ data }) => {
 	const {
@@ -35,7 +35,7 @@ const RecipeTemplate = ({ data }) => {
 					<div css={receipeBody}>
 						<span css={[receipeAuthor, receipeSubtle]}>{category}</span>
 						<h2 css={receipeTitle}>{title}</h2>
-						<span css={[receipeDescription, receipeSubtle]}>
+						<span css={receipeSubtle}>
 							<div>
 								<strong>Preparation time:</strong>
 							</div>
@@ -50,14 +50,14 @@ const RecipeTemplate = ({ data }) => {
 							<div>{difficulty}</div>
 						</span>
 						<div css={receipeRead}>Ingredients</div>
-						<span css={[receipeDescription]}>
+						<span css={receipeDescription}>
 							<ul>
 								{ingredients &&
 									ingredients.map((ing, index) => <li key={index}>{ing}</li>)}
 							</ul>
 						</span>
 						<div css={receipeRead}>Method</div>
-						<span css={[receipeDescription]}>
+						<span css={receipeDescription}>
 							<ul>
 								{instructions &&
 									instructions.split(`,`).map((i) => <li key={i}>{i}</li>)}
