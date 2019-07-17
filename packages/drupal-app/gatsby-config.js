@@ -22,5 +22,6 @@ module.exports = {
 				...drupalConfig
 			}
 		},
+		`gatsby-plugin-theme-ui`
 	]
 };

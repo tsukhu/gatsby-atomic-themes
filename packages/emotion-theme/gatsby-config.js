@@ -7,7 +7,8 @@ module.exports = (pluginOptions) => {
 					modules: ['@gatsby-themes/emotion']
 				}
 			},
-			`gatsby-plugin-emotion`
+			`gatsby-plugin-emotion`,
+			`gatsby-plugin-theme-ui`
 		]
 	};
 };

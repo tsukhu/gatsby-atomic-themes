@@ -9,15 +9,19 @@
 		"private": true,
 		"scripts": {
 				"develop": "gatsby develop",
+				"clean": "gatsby clean",
 				"build": "gatsby build"
 		},
 		"dependencies": {
 				"@emotion/core": "^10.0.14",
 				"@emotion/styled": "^10.0.14",
+				"emotion-theming": "^10.0.14",
 				"@gatsby-themes/core": "*",
 				"@gatsby-themes/drupal": "*",
 				"@gatsby-themes/emotion-recipe-theme": "*",
-				"emotion-theming": "^10.0.14",
+				"theme-ui": "^0.2.14",
+				"@theme-ui/presets": "^0.2.10",
+				"@mdx-js/react": "^1.0.27",
 				"gatsby": "^2.13.21",
 				"gatsby-image": "^2.2.6",
 				"gatsby-plugin-emotion": "^4.0.7",

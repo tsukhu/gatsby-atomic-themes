@@ -10,6 +10,8 @@
 	"dependencies": {
 		"@emotion/core": "^10.0.14",
 		"@emotion/styled": "^10.0.14",
+		"theme-ui": "^0.2.14",
+		"@theme-ui/presets": "^0.2.10",
 		"emotion-theming": "^10.0.14",
 		"gatsby": "^2.13.8",
 		"gatsby-plugin-emotion": "^4.0.7",
@@ -17,6 +19,7 @@
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
+		"@mdx-js/react": "^1.0.27",
 		"@gatsby-themes/emotion": "*"
 	},
 	"peerDependencies": {

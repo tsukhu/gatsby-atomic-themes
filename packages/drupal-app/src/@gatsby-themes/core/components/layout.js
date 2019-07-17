@@ -13,6 +13,7 @@ import { Link } from 'gatsby';
 import { Heading, Footer } from '@gatsby-themes/emotion-recipe-theme';
 
 const Layout = ({ children, theme }) => {
+	console.log(theme);
 	return (
 		<StaticQuery
 			query={graphql`
@@ -31,10 +32,10 @@ const Layout = ({ children, theme }) => {
 							<Link
 								to="/"
 								style={{
-									color: theme.color.primary,
+									color: theme.colors.primary,
 									textDecoration: `none`,
-									fontFamily: 'cursive',
-									margin: theme.pageMargin,
+									fontFamily: theme.fonts.heading,
+									margin: theme.space[2],
 									textShadow: '3px 3px 3px #fff'
 								}}
 							>
@@ -42,7 +43,7 @@ const Layout = ({ children, theme }) => {
 							</Link>
 						</Heading>
 						<main>{children}</main>
-						<Footer textColor={theme.color.primary}>
+						<Footer textColor={theme.colors.primary}>
 							{' '}
 							© {new Date().getFullYear()}, Built with
 							{` `}

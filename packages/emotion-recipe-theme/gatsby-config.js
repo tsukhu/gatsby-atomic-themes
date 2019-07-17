@@ -12,7 +12,7 @@ module.exports = (pluginOptions) => {
 				options: {
 					fullMode: true
 				}
-			},
+			}
 		]
 	};
 };
