@@ -7,6 +7,7 @@ import ImageCard from '../components/image-card';
 import RecipeTemplate from '../components/recipe-template';
 import recipeContent from './recipeContent';
 import cardListContent from './cardListContent';
+import HeaderSection from '../components/header-section';
 
 storiesOf('Emotion Receipe UI Theme', module)
 	.add('Image Card', () => (
@@ -32,4 +33,5 @@ storiesOf('Emotion Receipe UI Theme', module)
 			))}
 		</div>
 	))
-	.add('Receipe Card', () => <RecipeTemplate data={recipeContent} />);
+	.add('Receipe Card', () => <RecipeTemplate data={recipeContent} />)
+	.add('Header', () => <HeaderSection  />);
