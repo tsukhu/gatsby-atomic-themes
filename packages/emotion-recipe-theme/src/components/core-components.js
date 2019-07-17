@@ -23,6 +23,28 @@ export const Container = styled.div((props) => ({
 	padding: props.padding || 0
 }));
 
+export const Link = styled.a((props) => ({
+	minWidth: '12rem',
+	margin: '0 auto 20px',
+	padding: props.primary ? 18 : 16,
+	borderRadius: 5,
+	textDecoration: 'none',
+	border: props.primary ? 'none' : '3px solid currentColor',
+	background: props.primary && 'linear-gradient(15deg,#ffef95,#fad240, #ffd300)',
+	color: props.primary ? '#302f28' : '#ffd300',
+	'&:hover': {
+		opacity: '0.95',
+		color: 'black',
+		animationDelay: '1.5s'
+	},
+	'@media (min-width: 768px)': {
+		margin: '0 20px 0 0',
+		'&:last-child': {
+			margin: 0
+		}
+	}
+}));
+
 export const Card = styled('div')`
 	display: flex;
 	flex-direction: column;

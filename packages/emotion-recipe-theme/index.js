@@ -3,3 +3,4 @@ export * from './src/components/cards';
 export * from './src/components/core-components';
 export { default as RecipeTemplate } from './src/components/recipe-template';
 export { default as CardsTemplate } from './src/components/cards-template';
+export { default as HeaderSection } from './src/components/header-section';

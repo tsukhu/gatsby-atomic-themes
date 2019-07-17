@@ -1,5 +1,5 @@
 // https://codepen.io/donovanh/pen/PpbvZB
-
+import React from 'react';
 import { Global, css } from '@emotion/core';
 
 export const animatePopIn = css`
@@ -15,18 +15,17 @@ export const headerButton = css`
 	animation-delay: 1.1s;
 `;
 
-export const headerSubtitle = css`
+export const headerSubtitle = ({ fonts }) => css`
 	color: #fff;
-
 	text-transform: uppercase;
 	margin-bottom: 5rem;
-
 	animation-delay: 1s;
+	font-family: ${fonts.body};
 `;
 
-export const headerTitle = css`
+export const headerTitle = ({ fonts }) => css`
 	color: #fff;
-
+	font-family: ${fonts.heading};
 	animation-delay: 0.8s;
 `;
 
@@ -67,8 +66,7 @@ export const GlobalHeaderStyles = () => (
 						rgba(0, 0, 0, 0),
 						rgba(0, 0, 0, 0.8)
 					),
-					url(https://cssanimation.rocks/levelup/public/images/background.jpg)
-						no-repeat bottom;
+					url(./header.jpg) no-repeat bottom;
 
 				background-size: cover;
 
