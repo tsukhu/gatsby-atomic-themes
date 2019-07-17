@@ -1,39 +1,16 @@
-// https://codepen.io/donovanh/pen/PpbvZB
 import React from 'react';
+import { withTheme } from 'emotion-theming';
 import { Global, css } from '@emotion/core';
+import {
+	headerTitle,
+	animatePopIn,
+	headerButton,
+	headerSubtitle,
+	Link,
+	HeaderImage
+} from '@gatsby-themes/emotion-recipe-theme';
 
-export const animatePopIn = css`
-	animation: pop-in 0.6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
-	opacity: 0;
-`;
-
-export const headerButton = css`
-	transform: translateZ(0.1px);
-	position: relative;
-	z-index: 10;
-
-	animation-delay: 1.1s;
-`;
-
-export const headerSubtitle = ({ fonts }) => css`
-	color: #fff;
-	text-transform: uppercase;
-	margin-bottom: 5rem;
-	animation-delay: 1s;
-	font-family: ${fonts.body};
-`;
-
-export const headerTitle = ({ fonts }) => css`
-	color: #fff;
-	font-family: ${fonts.heading};
-	animation-delay: 0.8s;
-`;
-
-export const chefCap = css`
-	animation-delay: 0.6s;
-`;
-
-export const GlobalHeaderStyles = () => (
+const GlobalHeaderStyles = () => (
 	<Global
 		styles={css`
 			header {
@@ -147,3 +124,31 @@ export const GlobalHeaderStyles = () => (
 		`}
 	/>
 );
+
+
+const HeaderSection = ({theme}) => {
+	return (
+		<React.Fragment>
+			<GlobalHeaderStyles />
+			<header>
+				<section>
+					<HeaderImage />
+					<h1 css={[headerTitle(theme), animatePopIn]}>Your awesome landing page</h1>
+					<h3 css={[headerSubtitle(theme), animatePopIn]}>
+						A useful start for your projects
+					</h3>
+					<p css={[headerButton, animatePopIn]}>
+						<Link
+							href="http://courses.cssanimation.rocks/p/level-up"
+							primary
+						>
+							Get started today
+						</Link>
+					</p>
+				</section>
+			</header>
+		</React.Fragment>
+	);
+};
+
+export default withTheme(HeaderSection);

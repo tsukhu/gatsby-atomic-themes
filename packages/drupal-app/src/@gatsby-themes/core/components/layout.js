@@ -10,7 +10,11 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 import { Link } from 'gatsby';
-import { Heading, HeaderSection, Footer } from '@gatsby-themes/emotion-recipe-theme';
+import {
+	Heading,
+	HeaderSection,
+	Footer
+} from '@gatsby-themes/emotion-recipe-theme';
 
 const Layout = ({ children, theme }) => {
 	console.log(theme);
@@ -28,7 +32,20 @@ const Layout = ({ children, theme }) => {
 			render={(data) => (
 				<>
 					<div>
-						<HeaderSection />
+		{/* 				<Heading>
+							<Link
+								to="/"
+								style={{
+									color: theme.colors.primary,
+									textDecoration: `none`,
+									fontFamily: 'cursive',
+									margin: theme.pageMargin,
+									textShadow: '3px 3px 3px #fff'
+								}}
+							>
+								{data.site.siteMetadata.title}
+							</Link>
+						</Heading> */}
 						<main>{children}</main>
 						<Footer textColor={theme.colors.primary}>
 							{' '}
