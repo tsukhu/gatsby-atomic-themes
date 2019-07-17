@@ -33,10 +33,11 @@ export const receipeCircle = css`
 	width: 25px;
 `;
 
-export const receipeContainer = css`
+export const receipeContainer = ({fonts}) => css`
 	margin: 25px auto 0;
 	position: relative;
 	width: 692px;
+	font-family: ${fonts.body};
 `;
 
 export const receipeDescription = css`

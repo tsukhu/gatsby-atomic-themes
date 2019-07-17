@@ -1,9 +1,8 @@
 import React from 'react';
 import { configure, addDecorator } from "@storybook/react"
 import { action } from "@storybook/addon-actions"
-import { ThemeProvider } from 'emotion-theming';
-import { Global, css } from '@emotion/core';
-import theme from '../src/theme'
+import { ThemeProvider } from 'theme-ui'
+import { base } from '@theme-ui/presets'
 
 // automatically import all files ending in *.stories.js
 // highlight-next-line
@@ -29,7 +28,7 @@ window.___navigate = pathname => {
 }
 
 addDecorator((story) => (
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={base}>
     {story()}
   </ThemeProvider>
 ))

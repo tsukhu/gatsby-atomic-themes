@@ -15,6 +15,7 @@ import {
 	receipeMedia
 } from './recipe-components';
 
+import { withTheme } from 'emotion-theming';
 import { Container } from './core-components';
 
 const recipeSection = ({ title, items }) => (
@@ -26,7 +27,7 @@ const recipeSection = ({ title, items }) => (
 	</>
 );
 
-const RecipeTemplate = ({ data }) => {
+const RecipeTemplate = ({ data, theme }) => {
 	const {
 		category,
 		title,
@@ -39,7 +40,7 @@ const RecipeTemplate = ({ data }) => {
 	} = data;
 	return (
 		<Container column margin={20}>
-			<div css={receipeContainer}>
+			<div css={receipeContainer(theme)}>
 				<div css={[receipe, receipeUclearfix]}>
 					<div css={receipeBody}>
 						<span css={[receipeAuthor, receipeSubtle]}>{category}</span>
@@ -75,4 +76,4 @@ RecipeTemplate.propTypes = {
 	data: PropTypes.object.isRequired
 };
 
-export default RecipeTemplate;
+export default withTheme(RecipeTemplate);
