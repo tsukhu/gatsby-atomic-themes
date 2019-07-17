@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withTheme } from 'emotion-theming';
 import { cardsList } from './cards';
 import { Container } from './core-components';
 import ImageCard from './image-card';
@@ -30,4 +31,4 @@ CardsTemplate.propTypes = {
 	cardClickHandler: PropTypes.func.isRequired
 };
 
-export default CardsTemplate;
+export default withTheme(CardsTemplate);

@@ -6,7 +6,7 @@ export const card = css`
 	height: 300px;
 	border-radius: 20px;
 	box-shadow: 0 10px 10px -5px;
-//	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
+	//	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.25);
 	//,
 	//	-5px -5px 30px 7px rgba(0, 0, 0, 0.22);
 	cursor: pointer;
@@ -15,7 +15,7 @@ export const card = css`
 	&:hover {
 		transform: scale(0.9, 0.9);
 		box-shadow: 0 20px 20px -5px;
-	//	box-shadow: 5px 5px 0px 15px rgba(0, 0, 0, 0.25);//,
+		//	box-shadow: 5px 5px 0px 15px rgba(0, 0, 0, 0.25);//,
 		//	-5px -5px 5px 5px rgba(0, 0, 0, 0.22);
 	}
 `;
@@ -33,7 +33,7 @@ export const cardImage = css`
 		width: inherit;
 		height: inherit;
 		//		background-image: linear-gradient(120deg, #eaee44, #33d0ff);
-		background-color: rgba(0, 0, 0, 0.40); // #333;
+		background-color: rgba(0, 0, 0, 0.4); // #333;
 		border-radius: 20px;
 		object-fit: cover;
 		opacity: 0.7;
@@ -78,9 +78,10 @@ export const titleBlack = css`
 	z-index: 12;
 `;
 
-export const titleWhite = css`
+export const titleWhite = ({fonts}) => css`
 	color: white;
 	z-index: 12;
+	font-family: ${fonts.body};
 `;
 
 export const cardsList = css`

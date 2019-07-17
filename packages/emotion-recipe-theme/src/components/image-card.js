@@ -1,15 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { css } from '@emotion/core';
+import { withTheme } from 'emotion-theming';
 import { card, cardImage, cartTitle, titleWhite } from './cards';
 
-const ImageCard = ({ slug, title, imageSrc, cardClickHandler }) => {
+const ImageCard = ({ slug, title, imageSrc, cardClickHandler, theme }) => {
+
 	return (
 		<div css={card} key={slug} onClick={() => cardClickHandler(slug)}>
 			<div css={cardImage}>
 				<img src={imageSrc} alt={title} />
 			</div>
-			<div css={[cartTitle, titleWhite]}>
-				<p>{title}</p>
+			<div css={cartTitle}>
+				<p css={titleWhite(theme)}>{title}</p>
 			</div>
 		</div>
 	);
@@ -22,4 +25,4 @@ ImageCard.propTypes = {
 	cardClickHandler: PropTypes.func.isRequired
 };
 
-export default ImageCard;
+export default withTheme(ImageCard);
