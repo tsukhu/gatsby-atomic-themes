@@ -1,3 +1,4 @@
+const path = require('path')
 const config = require('./data/siteConfig.js');
 const drupalConfig = require('./data/drupalConfig.js');
 
@@ -13,6 +14,15 @@ module.exports = {
 				pathPrefix: config.pathPrefix
 			}
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				name: `images`,
+				path: path.join(__dirname, `src`, `images`),
+			},
+		},
+		`gatsby-plugin-sharp`,
+		`gatsby-transformer-sharp`,
 		{
 			resolve: '@gatsby-themes/emotion-recipe-theme'
 		},
