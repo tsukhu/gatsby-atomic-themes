@@ -6,6 +6,7 @@ export default {
 	colors: {
 		...roboto.colors,
 		white: '#fff',
+		background: '#f9fcff',
 	},
 	fonts: {
     body: 'Oswald, system-ui, sans-serif',

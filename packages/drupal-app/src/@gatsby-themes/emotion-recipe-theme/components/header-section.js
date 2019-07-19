@@ -1,7 +1,8 @@
 import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
-import { Global, css } from '@emotion/core';
+import { css } from '@emotion/core';
+
 import {
 	headerTitle,
 	animatePopIn,
@@ -11,122 +12,102 @@ import {
 	Link
 } from '@gatsby-themes/emotion-recipe-theme';
 
-const GlobalHeaderStyles = ({ image }) => {
-	return (
-		<Global
-			styles={css`
-				header {
-					align-items: center;
+export const Header = (image) => css`
+	align-items: center;
+	display: flex;
+	font-size: 18px;
+	height: 100vh;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	transform-style: preserve-3d;
+	perspective: 100px;
 
-					display: flex;
+	& :before {
+		animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+		background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)),
+			url(${image}) no-repeat bottom;
 
-					font-size: 18px;
+		background-size: cover;
 
-					height: 100vh;
+		content: '';
 
-					justify-content: center;
+		opacity: 0;
 
-					overflow: hidden;
+		position: absolute;
 
-					position: relative;
+		top: 0;
 
-					text-align: center;
+		right: 0;
 
-					transform-style: preserve-3d;
+		bottom: 0;
 
-					perspective: 100px;
-				}
+		left: 0;
 
-				header:before {
-					animation: fade-slide-down 2s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+		z-index: -1;
+	}
 
-					background: linear-gradient(
-							to bottom,
-							rgba(0, 0, 0, 0),
-							rgba(0, 0, 0, 0.8)
-						),
-						url(${image}) no-repeat bottom;
+	&:after {
+		animation: rotate-up 0.5s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
 
-					background-size: cover;
+		background: #f9fcff;
 
-					content: '';
+		content: '';
 
-					opacity: 0;
+		height: 40rem;
 
-					position: absolute;
+		left: -5%;
 
-					top: 0;
+		position: absolute;
 
-					right: 0;
+		right: -5%;
 
-					bottom: 0;
+		top: 90%;
 
-					left: 0;
+		transform-origin: 0 0;
 
-					z-index: -1;
-				}
+		z-index: 0;
+	}
 
-				header:after {
-					animation: rotate-up 0.5s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
+	/* Animations */
 
-					background: #f9fcff;
+	@keyframes fade-slide-down {
+		0% {
+			opacity: 0;
 
-					content: '';
+			transform: translateY(-4rem);
+		}
 
-					height: 40rem;
+		100% {
+			opacity: 1;
 
-					left: -5%;
+			transform: none;
+		}
+	}
 
-					position: absolute;
+	@keyframes pop-in {
+		0% {
+			opacity: 0;
 
-					right: -5%;
+			transform: translateY(-4rem) scale(0.8);
+		}
 
-					top: 90%;
+		100% {
+			opacity: 1;
 
-					transform-origin: 0 0;
+			transform: none;
+		}
+	}
 
-					z-index: 0;
-				}
+	@keyframes rotate-up {
+		100% {
+			transform: rotateZ(-4deg);
+		}
+	}
+`;
 
-				/* Animations */
 
-				@keyframes fade-slide-down {
-					0% {
-						opacity: 0;
-
-						transform: translateY(-4rem);
-					}
-
-					100% {
-						opacity: 1;
-
-						transform: none;
-					}
-				}
-
-				@keyframes pop-in {
-					0% {
-						opacity: 0;
-
-						transform: translateY(-4rem) scale(0.8);
-					}
-
-					100% {
-						opacity: 1;
-
-						transform: none;
-					}
-				}
-
-				@keyframes rotate-up {
-					100% {
-						transform: rotateZ(-4deg);
-					}
-				}
-			`}
-		/>
-	);
-};
 
 const HeaderSection = ({ theme }) => {
 	return (
@@ -144,10 +125,7 @@ const HeaderSection = ({ theme }) => {
 			`}
 			render={(data) => (
 				<React.Fragment>
-					<GlobalHeaderStyles
-						image={data.placeholderImage.childImageSharp.fluid.src}
-					/>
-					<header>
+					<header css={Header(data.placeholderImage.childImageSharp.fluid.src)}>
 						<section>
 							<HeaderImage />
 							<h1 css={[headerTitle(theme), animatePopIn]}>

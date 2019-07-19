@@ -10,11 +10,24 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 import { Link } from 'gatsby';
+import { Global, css } from '@emotion/core';
 import {
 	Heading,
 	HeaderSection,
 	Footer
 } from '@gatsby-themes/emotion-recipe-theme';
+
+const GlobalHeaderStyles = ({ theme }) => {
+	return (
+		<Global
+			styles={css`
+				body {
+					background: ${theme.colors.background};
+				}
+			`}
+		/>
+	);
+};
 
 const Layout = ({ children, theme }) => {
 	console.log(theme);
@@ -31,8 +44,10 @@ const Layout = ({ children, theme }) => {
 			`}
 			render={(data) => (
 				<>
+					<GlobalHeaderStyles theme={theme} />
+
 					<div>
-		{/* 				<Heading>
+						{/* 				<Heading>
 							<Link
 								to="/"
 								style={{
