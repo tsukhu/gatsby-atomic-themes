@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/emotion-recipe-theme",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Emotion theme",
 	"main": "index.js",
 	"repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
@@ -10,7 +10,7 @@
 	"keywords": [
 		"gatsby",
 		"gatsby-theme"
-  ],
+	],
 	"dependencies": {
 		"@emotion/core": "^10.0.14",
 		"@emotion/styled": "^10.0.14",
