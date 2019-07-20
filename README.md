@@ -152,6 +152,10 @@ yarn
 yarn develop
 ```
 
+## Gatsby Themes NPM Page
+
+The themes are published here https://www.npmjs.com/search?q=%40gatsby-themes
+
 ## LICENSE
 
 MIT
