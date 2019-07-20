@@ -2,14 +2,11 @@ import React from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 import { css } from '@emotion/core';
-
 import {
 	headerTitle,
 	animatePopIn,
-	headerButton,
 	headerSubtitle,
-	HeaderImage,
-	Link
+	HeaderImage
 } from '@gatsby-themes/emotion-recipe-theme';
 
 export const Header = (image) => css`
@@ -107,8 +104,6 @@ export const Header = (image) => css`
 	}
 `;
 
-
-
 const HeaderSection = ({ theme }) => {
 	return (
 		<StaticQuery
@@ -134,14 +129,6 @@ const HeaderSection = ({ theme }) => {
 							<h3 css={[headerSubtitle(theme), animatePopIn]}>
 								A useful start for your projects
 							</h3>
-							<p css={[headerButton, animatePopIn]}>
-								<Link
-									href="http://courses.cssanimation.rocks/p/level-up"
-									primary
-								>
-									Get started today
-								</Link>
-							</p>
 						</section>
 					</header>
 				</React.Fragment>

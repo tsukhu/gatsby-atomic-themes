@@ -1,9 +1,11 @@
-
 import React from 'react';
 import { Layout, SEO } from '@gatsby-themes/core';
+import { Link } from 'gatsby';
+import { withTheme } from 'emotion-theming';
+import { Heading } from '@gatsby-themes/emotion-recipe-theme';
 import { RecipeTemplate } from '@gatsby-themes/emotion-recipe-theme';
 
-const RecipePage = ({ data }) => {
+const RecipePage = ({ data,theme }) => {
 	const { recipes } = data;
 	const {
 		relationships,
@@ -30,9 +32,23 @@ const RecipePage = ({ data }) => {
 	return (
 		<Layout>
 			<SEO title={data.recipes.title} />
+			<Heading>
+				<Link
+					to="/"
+					style={{
+						color: theme.colors.primary,
+						textDecoration: `none`,
+						fontFamily: theme.fonts.heading,
+						margin: theme.pageMargin,
+						textShadow: '3px 3px 3px #fff'
+					}}
+				>
+					Home
+				</Link>
+			</Heading>
 			<RecipeTemplate data={recipeData} />
 		</Layout>
 	);
 };
 
-export default RecipePage;
+export default withTheme(RecipePage);

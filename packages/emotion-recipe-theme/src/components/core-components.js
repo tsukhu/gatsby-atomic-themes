@@ -10,6 +10,7 @@ export const Heading = styled('h1')`
 export const Footer = styled('footer')`
 	border-top: 1px solid #ccc;
 	color: ${(props) => props.textColor};
+	font-family: ${(props) => props.font? props.font: 'sans-serif'};
 	margin-top: 50px !important;
 	text-align: center;
 	font-weight: bold;

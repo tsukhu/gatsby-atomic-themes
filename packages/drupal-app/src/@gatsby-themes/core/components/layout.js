@@ -9,7 +9,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
-import { Link } from 'gatsby';
+
 import { Global, css } from '@emotion/core';
 import {
 	Heading,
@@ -47,22 +47,8 @@ const Layout = ({ children, theme }) => {
 					<GlobalHeaderStyles theme={theme} />
 
 					<div>
-						{/* 				<Heading>
-							<Link
-								to="/"
-								style={{
-									color: theme.colors.primary,
-									textDecoration: `none`,
-									fontFamily: 'cursive',
-									margin: theme.pageMargin,
-									textShadow: '3px 3px 3px #fff'
-								}}
-							>
-								{data.site.siteMetadata.title}
-							</Link>
-						</Heading> */}
 						<main>{children}</main>
-						<Footer textColor={theme.colors.primary}>
+						<Footer textColor={theme.colors.primary} font={theme.fonts.body}>
 							{' '}
 							© {new Date().getFullYear()}, Built with
 							{` `}

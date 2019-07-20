@@ -1,12 +1,13 @@
 import 'typeface-pacifico';
 import 'typeface-oswald';
-import { roboto } from '@theme-ui/presets';
+import { bulma } from '@theme-ui/presets';
 export default {
-	...roboto,
+	...bulma,
 	colors: {
-		...roboto.colors,
+		...bulma.colors,
 		white: '#fff',
 		background: '#f9fcff',
+		primary: 'black'
 	},
 	fonts: {
     body: 'Oswald, system-ui, sans-serif',
