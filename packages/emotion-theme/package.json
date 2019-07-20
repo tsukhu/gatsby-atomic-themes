@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/emotion",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "Emotion theme",
 	"main": "index.js",
 	"repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
