@@ -3,6 +3,13 @@
 The emotion theme sets up the configuration based on the best practices recommended by the [Gatsby team](https://www.gatsbyjs.org/docs/emotion/)
 
 - This takes care of all the setup and configuration requirements for theming, layouts and setup.
+- This uses `theme-ui` as the theming style system
+- This also is a core / component UI library of EmotionJS components. As an example a sample UI component has been added called `About`
+- To access the About component
+
+```javascript
+import {About} from @gatsby-themes/emotion;
+```
 
 ## How to use
 
@@ -14,7 +21,6 @@ yarn add `@gatsby-themes/emotion`
 ```
 
 - Configure the theme in the `gatsby-config.js` file.
-- Pass option `fullMode: true` if you want to use the emotion related theming to be setup for the entire app. In case you are using some other theme provider then do not provide any option.
 
 ```javascript
 module.exports = {
