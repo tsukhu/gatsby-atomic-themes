@@ -1,7 +1,7 @@
 {
   "name": "@gatsby-themes/core",
   "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Tarun Kumar Sukhu <tksukhu@gmail.com>",
   "main": "index.js",
   "dependencies": {
