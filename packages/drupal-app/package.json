@@ -12,6 +12,10 @@
 				"clean": "gatsby clean",
 				"build": "gatsby build"
 		},
+		"keywords": [
+			"gatsby",
+			"gatsby-app"
+		],
 		"dependencies": {
 				"@emotion/core": "^10.0.14",
 				"@emotion/styled": "^10.0.14",

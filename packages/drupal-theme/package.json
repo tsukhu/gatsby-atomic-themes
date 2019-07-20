@@ -7,6 +7,10 @@
 	"author": "Tarun Kumar Sukhu <tksukhu@gmail.com>",
 	"license": "MIT",
 	"private": false,
+	"keywords": [
+		"gatsby",
+		"gatsby-theme"
+  ],
 	"dependencies": {
 		"gatsby": "^2.13.21",
 		"gatsby-plugin-compile-es6-packages": "^1.1.0",

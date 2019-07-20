@@ -7,6 +7,10 @@
 	"author": "Tarun Kumar Sukhu<tksukhu@gmail.com>",
 	"license": "MIT",
 	"private": false,
+	"keywords": [
+		"gatsby",
+		"gatsby-theme"
+  ],
 	"dependencies": {
 		"@emotion/core": "^10.0.14",
 		"@emotion/styled": "^10.0.14",
