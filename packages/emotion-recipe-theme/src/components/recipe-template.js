@@ -12,7 +12,8 @@ import {
 	receipeSubtle,
 	receipeTitle,
 	receipeUclearfix,
-	receipeMedia
+	receipeMedia,
+	recipeCategory
 } from './recipe-components';
 
 import { withTheme } from 'emotion-theming';
@@ -38,26 +39,27 @@ const RecipeTemplate = ({ data, theme }) => {
 		instructions,
 		childImageSharp
 	} = data;
+	console.log(theme);
 	return (
-		<Container column margin={20}>
+		<Container column margin={theme.space[1]}>
 			<div css={receipeContainer(theme)}>
 				<div css={[receipe, receipeUclearfix]}>
 					<div css={receipeBody}>
-						<span css={[receipeAuthor, receipeSubtle]}>{category}</span>
+						<span css={[receipeAuthor, recipeCategory]}>{category}</span>
 						<h2 css={receipeTitle}>{title}</h2>
-						<span css={receipeSubtle}>
+						<span >
 							<div>
 								<strong>Preparation time:</strong>
 							</div>
-							<div>{preparationTime} minutes</div>
+							<div css={receipeSubtle}>{preparationTime} minutes</div>
 							<div>
 								<strong>Cooking time:</strong>
 							</div>
-							<div>{totalTime} minutes</div>
+							<div css={receipeSubtle}>{totalTime} minutes</div>
 							<div>
 								<strong>Difficulty:</strong>
 							</div>
-							<div>{difficulty}</div>
+							<div css={receipeSubtle}>{difficulty}</div>
 						</span>
 						{recipeSection({title: 'Ingredients', items: ingredients})}
 						{recipeSection({title: 'Method', items: instructions.split(`,`)})}

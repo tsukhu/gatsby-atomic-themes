@@ -8,8 +8,18 @@ export const Heading = styled('h1')`
 	text-shadow: 2px 2px black;
 	font-size: 3rem;
 	animation-delay: 0.8s;
-	padding: 5px;
+	padding: 10px;
 	margin: 5px;
+
+	@media (max-width: 760px) {
+		font-size: 2rem;
+	}
+
+	@media (max-width: 420px) {
+		font-size: 1rem;
+	}
+
+
 `;
 
 export const SubHeading = styled('h2')`
@@ -46,7 +56,7 @@ export const Footer = styled('footer')`
 export const Container = styled.div((props) => ({
 	display: 'flex',
 	flexDirection: props.column && 'column',
-	margin: props.margin || 100,
+	margin: props.margin || 10,
 	padding: props.padding || 0
 }));
 

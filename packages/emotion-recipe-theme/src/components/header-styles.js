@@ -20,13 +20,15 @@ export const headerSubtitle = ({ fonts }) => css`
 	text-transform: uppercase;
 	margin-bottom: 5rem;
 	animation-delay: 1s;
+	font-size: 1.75rem;
+	text-shadow: 4px 4px black;
 	font-family: ${fonts.body};
 `;
 
 export const headerTitle = (theme, color) => css`
 	color: ${(color)?color:'#fff'};
 	font-family: ${theme.fonts.heading};
-	text-shadow: 2px 2px black;
+	text-shadow: 4px 4px black;
 	font-size: 3rem;
 	animation-delay: 0.8s;
 `;

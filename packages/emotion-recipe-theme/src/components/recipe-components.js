@@ -9,17 +9,16 @@ export const receipe = css`
 `;
 
 export const receipeAuthor = css`
-	display: block;
-	font-size: 12px;
+	font-size: 1.1rem;
 	letter-spacing: 0.5px;
 	margin: 15px 0 0;
 	text-transform: uppercase;
 `;
 
 export const receipeBody = css`
-	display: inline-block;
+	display: block;
 	float: left;
-	width: 310px;
+	width: 60%;
 `;
 
 export const receipeCircle = css`
@@ -33,10 +32,10 @@ export const receipeCircle = css`
 	width: 25px;
 `;
 
-export const receipeContainer = ({fonts}) => css`
+export const receipeContainer = ({ fonts }) => css`
 	margin: 25px auto 0;
 	position: relative;
-	width: 692px;
+	width: 100%;
 	font-family: ${fonts.body};
 `;
 
@@ -48,8 +47,9 @@ export const receipeDescription = css`
 `;
 
 export const receipeMedia = css`
-	margin-top: 50px;
 	display: block;
+	float: right;
+	width: 40%;
 `;
 
 export const receipeNumber = css`
@@ -58,23 +58,16 @@ export const receipeNumber = css`
 
 export const receipeRead = css`
 	cursor: pointer;
-	font-size: 14px;
+	font-size: 1.2rem;
 	font-weight: 700;
 	letter-spacing: 6px;
-	margin: 5px 0 20px;
+	margin: 10px 0px 10px;
 	position: relative;
-	text-align: right;
+	text-align: left;
 	text-transform: uppercase;
-
-	&:after {
-		background-color: #b8bddd;
-		content: '';
-		display: block;
-		height: 1px;
-		position: absolute;
-		top: 9px;
-		width: 50%;
-	}
+	padding: 10px;
+	color: #fff;
+	background-color: #2F2A2A;
 `;
 
 export const receipeShadow = css`
@@ -100,7 +93,11 @@ export const receipeTitle = css`
 `;
 
 export const receipeSubtle = css`
-	color: #aaa;
+	color: #262626;
+`;
+
+export const recipeCategory = css`
+	color: #004080;
 `;
 
 export const receipeUclearfix = css`
