@@ -1,9 +1,10 @@
 # Gatsby Core Theme
 
-The core theme sets up the configuration based on the default Gatsby Starter template.
+The core theme sets up the base configuration.
 
 - The idea is to have the SEO, image processing, file source setup , PWA, core branding of the product in one place and versioned
 - Sites can simply use the not worry about setting this piece properly and any changes to the core configuration can be done via the theme.
+- All organization specific core plugins , icons can be configured here.
 
 ## How to use
 
