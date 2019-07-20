@@ -89,13 +89,13 @@ The demo sites built using this monorepo are available
 ### Material-UI & Emotion Demo App
 
 - Name: `demo-app`
-- Usecase(s): ``Shadowing Components`,`Extendability and Atomic themes`
+- Usecase(s): `Shadowing Components`,`Extendability and Atomic themes`
 
 Demo application based on Gatsby Themes that mimics the Gatsby Starter plus uses the core, material-ui (mui) and emotion themes to demonstrate composition and component shadowing.
 
 ### Showcase Drupal App
 - Name: `drupal-app`
-- Usecase(s): ``Shadowing Components`,`Extendability and Atomic themes`
+- Usecase(s): `Shadowing Components`,`Extendability and Atomic themes`
 
 This is the main showcase application based on based on Gatsby Themes, Drupal and Emotion. This leverages all the above mentioned themes and uses all the theme concepts.
 This application also has got 100% results in Lighthouse and this demo site is PWA enabled.
