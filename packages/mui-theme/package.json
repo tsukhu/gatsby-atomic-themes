@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/mui",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "Material UI Theme",
 	"main": "index.js",
 	"author": "Tarun Kumar Sukhu",
