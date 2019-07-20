@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/drupal",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Drupal Theme for Gatsby",
 	"main": "index.js",
 	"repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
