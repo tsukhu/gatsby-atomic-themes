@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/emotion-recipe-theme",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Emotion theme",
 	"main": "index.js",
 	"repository": "https://github.com/ERS-HCL/gatsby-atomic-themes",
@@ -10,17 +10,17 @@
 	"dependencies": {
 		"@emotion/core": "^10.0.14",
 		"@emotion/styled": "^10.0.14",
-		"theme-ui": "^0.2.14",
+		"@gatsby-themes/emotion": "*",
+		"@mdx-js/react": "^1.0.27",
 		"@theme-ui/presets": "^0.2.10",
 		"emotion-theming": "^10.0.14",
 		"gatsby": "^2.13.8",
-		"gatsby-plugin-emotion": "^4.0.7",
 		"gatsby-plugin-compile-es6-packages": "^1.1.0",
+		"gatsby-plugin-emotion": "^4.0.7",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
-		"@mdx-js/react": "^1.0.27",
-		"@gatsby-themes/emotion": "*"
+		"theme-ui": "^0.2.14"
 	},
 	"peerDependencies": {
 		"@emotion/core": "^10.0.14",
@@ -37,15 +37,15 @@
 		"build-storybook": "cross-env NODE_ENV=production build-storybook -s static"
 	},
 	"devDependencies": {
-		"cross-env": "^5.2.0",
+		"@babel/core": "^7.5.4",
 		"@emotion/babel-preset-css-prop": "^10.0.14",
-		"babel-plugin-emotion": "^10.0.14",
 		"@storybook/addon-actions": "^5.1.9",
 		"@storybook/addon-links": "^5.1.9",
 		"@storybook/addons": "^5.1.9",
 		"@storybook/react": "^5.1.9",
-		"@babel/core": "^7.5.4",
 		"babel-loader": "^8.0.6",
-		"babel-plugin-remove-graphql-queries": "^2.7.2"
+		"babel-plugin-emotion": "^10.0.14",
+		"babel-plugin-remove-graphql-queries": "^2.7.2",
+		"cross-env": "^5.2.0"
 	}
 }
