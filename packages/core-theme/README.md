@@ -10,6 +10,15 @@ The core theme sets up the base configuration.
 
 - Add the dependency `@gatsby-themes/core`
 - The core theme will warn of the peer dependencies which also must be added to the gatsby site leveraging this theme.
+- The dependencies include
+	- "gatsby": "^2.13.21",
+  - "gatsby-image": "^2.2.6",
+  - "gatsby-plugin-manifest": "^2.2.0",
+  - "gatsby-plugin-offline": "^2.2.0",
+  - "gatsby-plugin-react-helmet": "^3.1.0",
+  - "gatsby-plugin-sharp": "^2.2.1",
+  - "gatsby-source-filesystem": "^2.1.0",
+  - "gatsby-transformer-sharp": "^2.2.0",
 
 ```bash
 yarn add `@gatsby-themes/core`
