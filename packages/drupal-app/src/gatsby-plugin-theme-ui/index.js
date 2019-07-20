@@ -6,7 +6,7 @@ export default {
 	colors: {
 		...bulma.colors,
 		white: '#fff',
-		background: '#f9fcff',
+		background: '#2F2A2A', // '#f9fcff',
 		primary: 'black'
 	},
 	fonts: {

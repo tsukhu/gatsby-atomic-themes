@@ -9,7 +9,7 @@ import {
 	HeaderImage
 } from '@gatsby-themes/emotion-recipe-theme';
 
-export const Header = (image) => css`
+export const headerStyle = (image,background) => css`
 	align-items: center;
 	display: flex;
 	font-size: 18px;
@@ -48,7 +48,7 @@ export const Header = (image) => css`
 	&:after {
 		animation: rotate-up 0.5s 0.5s cubic-bezier(0, 0.5, 0, 1) forwards;
 
-		background: #f9fcff;
+		background: ${background};
 
 		content: '';
 
@@ -120,7 +120,7 @@ const HeaderSection = ({ theme }) => {
 			`}
 			render={(data) => (
 				<React.Fragment>
-					<header css={Header(data.placeholderImage.childImageSharp.fluid.src)}>
+					<header css={headerStyle(data.placeholderImage.childImageSharp.fluid.src, theme.colors.background)}>
 						<section>
 							<HeaderImage />
 							<h1 css={[headerTitle(theme), animatePopIn]}>

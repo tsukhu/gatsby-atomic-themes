@@ -62,6 +62,7 @@ export const receipeRead = css`
 	font-weight: 700;
 	letter-spacing: 6px;
 	margin: 10px 0px 10px;
+	margin-right: 10px;
 	position: relative;
 	text-align: left;
 	text-transform: uppercase;
