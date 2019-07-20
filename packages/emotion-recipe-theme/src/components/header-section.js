@@ -18,7 +18,6 @@ const HeaderSection = ({theme}) => {
 			<GlobalHeaderStyles />
 			<header>
 				<section>
-					<img css={[chefCap, animatePopIn]} src="./chef.svg" />
 					<HeaderImage />
 					<h1 css={[headerTitle(theme), animatePopIn]}>Your awesome landing page</h1>
 					<h3 css={[headerSubtitle(theme), animatePopIn]}>
