@@ -20,11 +20,11 @@ This project demonstrates the following
 
 The demo sites built using this monorepo are available
 
-	1) Simple Site which mimics the basic Gatsby Starter plus uses the `core` & `mui` is available [here](https://gatsby-atomic-themes.netlify.com/). The source for the same is the [site App](./site)
+- Simple Site which mimics the basic Gatsby Starter plus uses the `core` & `mui` is available [here](https://gatsby-atomic-themes.netlify.com/). The source for the same is the [site App](./site)
 	
 ![Demo Site](./images/theme_one.PNG)
 
-	2) A main showcase app called `GATSBY RECIPEZE` is a Drupal site which depicts all the above mentioned uses cases is available [here](https://gatsby-drupal-theme-app.netlify.com/)
+- A main showcase app called `GATSBY RECIPEZE` is a Drupal site which depicts all the above mentioned uses cases is available [here](https://gatsby-drupal-theme-app.netlify.com/)
 
 ![Drupal Index Page](./images/recipe_index.PNG)
 ![Drupal Detailed Page](./images/recipe.PNG)
