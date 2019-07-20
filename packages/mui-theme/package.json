@@ -1,6 +1,6 @@
 {
 	"name": "@gatsby-themes/mui",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Material UI Theme",
 	"main": "index.js",
 	"author": "Tarun Kumar Sukhu",
@@ -42,7 +42,7 @@
 	"keywords": [
 		"gatsby",
 		"gatsby-theme"
-  ],
+	],
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/ERS-HCL/gatsby-atomic-themes"
