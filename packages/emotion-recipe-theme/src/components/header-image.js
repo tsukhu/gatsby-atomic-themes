@@ -5,6 +5,6 @@ import {
 } from './header-styles';
 
 const HeaderImage = () => (
-  <img css={[chefCap, animatePopIn]} src="./chef.svg" />
+  <img css={[chefCap, animatePopIn]} src="./chef.svg" alt="chefs hat"/>
 )
 export default HeaderImage

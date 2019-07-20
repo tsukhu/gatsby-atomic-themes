@@ -5,16 +5,42 @@ export const Heading = styled('h1')`
 	color: ${(props) => props.fg};
 	padding-bottom: 20px;
 	border-bottom: 1px solid #ccc;
+	text-shadow: 2px 2px black;
+	font-size: 3rem;
+	animation-delay: 0.8s;
+	padding: 5px;
+	margin: 5px;
+`;
+
+export const SubHeading = styled('h2')`
+	background-color: ${(props) => props.bg};
+	color: ${(props) => props.fg};
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	text-shadow: 2px 2px black;
+	font-family:  ${(props) => props.font};
+	font-size: 2rem;
+	animation-delay: 0.8s;
+	padding: 15px;
+	margin: 5px;
 `;
 
 export const Footer = styled('footer')`
 	border-top: 1px solid #ccc;
-	color: ${(props) => props.textColor};
-	font-family: ${(props) => props.font? props.font: 'sans-serif'};
 	margin-top: 50px !important;
 	text-align: center;
 	font-weight: bold;
 	padding-top: 20px;
+	background-color: ${(props) => props.bg};
+	color: ${(props) => props.fg};
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+	text-shadow: 2px 2px black;
+	font-family:  ${(props) => props.font? props.font: 'sans-serif'};
+	font-size: 1.5rem;
+	animation-delay: 0.8s;
+	padding: 15px;
+	margin: 5px;
 `;
 
 export const Container = styled.div((props) => ({

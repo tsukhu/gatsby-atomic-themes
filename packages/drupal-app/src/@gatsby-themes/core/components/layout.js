@@ -11,11 +11,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 
 import { Global, css } from '@emotion/core';
-import {
-	Heading,
-	HeaderSection,
-	Footer
-} from '@gatsby-themes/emotion-recipe-theme';
+import { Footer } from '@gatsby-themes/emotion-recipe-theme';
 
 const GlobalHeaderStyles = ({ theme }) => {
 	return (
@@ -30,7 +26,6 @@ const GlobalHeaderStyles = ({ theme }) => {
 };
 
 const Layout = ({ children, theme }) => {
-	console.log(theme);
 	return (
 		<StaticQuery
 			query={graphql`
@@ -48,11 +43,11 @@ const Layout = ({ children, theme }) => {
 
 					<div>
 						<main>{children}</main>
-						<Footer textColor={theme.colors.primary} font={theme.fonts.body}>
+						<Footer bg="#2F2A2A" fg={theme.colors.white} font={theme.fonts.body}>
 							{' '}
 							© {new Date().getFullYear()}, Built with
 							{` `}
-							<a href="https://www.gatsbyjs.org">Gatsby</a>
+							<a href="https://www.gatsbyjs.org" style={{color: '#FFD700' }}>Gatsby Themes</a>
 						</Footer>
 					</div>
 				</>

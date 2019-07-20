@@ -1,4 +1,4 @@
-import 'typeface-pacifico';
+import 'typeface-righteous';
 import 'typeface-oswald';
 import { bulma } from '@theme-ui/presets';
 export default {
@@ -11,7 +11,7 @@ export default {
 	},
 	fonts: {
     body: 'Oswald, system-ui, sans-serif',
-    heading: 'Pacifico, system-ui, sans-serif',
+    heading: 'Righteous, cursive',
     monospace: '"Roboto Mono", monospace',
   },
 };

@@ -13732,6 +13732,11 @@ typeface-pacifico@^0.0.72:
   resolved "https://registry.yarnpkg.com/typeface-pacifico/-/typeface-pacifico-0.0.72.tgz#fa8b2005ba365b4610ac9d177e209fbecb9eb083"
   integrity sha512-LBdb5Ks9+efGNLwWJ6Emt+3yc+lugVDPNMMZM+FJ+qcP7UvtwF7HzVF404AQhp9+7CB7NU/vkSpnA53pdTFFZw==
 
+typeface-righteous@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-righteous/-/typeface-righteous-0.0.72.tgz#a4e0ccc59ddb4a692c088d01a4e505789c81a29f"
+  integrity sha512-JMMkhPgwtRSM+AvmVjZTQ7fZ3OiqubHt27qhMatCW6JR1hVRjvNuYk7L31Ad/3EOzg+l0dXdCBJMT+OO0uVELA==
+
 ua-parser-js@^0.7.18:
   version "0.7.20"
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.20.tgz#7527178b82f6a62a0f243d1f94fd30e3e3c21098"

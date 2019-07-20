@@ -39,6 +39,7 @@
 				"react-helmet": "^5.2.1",
 				"theme-ui": "^0.2.14",
 				"typeface-oswald": "^0.0.54",
-				"typeface-pacifico": "^0.0.72"
+				"typeface-pacifico": "^0.0.72",
+				"typeface-righteous": "^0.0.72"
 		}
 }

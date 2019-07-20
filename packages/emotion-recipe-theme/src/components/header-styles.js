@@ -23,9 +23,11 @@ export const headerSubtitle = ({ fonts }) => css`
 	font-family: ${fonts.body};
 `;
 
-export const headerTitle = ({ fonts }) => css`
-	color: #fff;
-	font-family: ${fonts.heading};
+export const headerTitle = (theme, color) => css`
+	color: ${(color)?color:'#fff'};
+	font-family: ${theme.fonts.heading};
+	text-shadow: 2px 2px black;
+	font-size: 3rem;
 	animation-delay: 0.8s;
 `;
 

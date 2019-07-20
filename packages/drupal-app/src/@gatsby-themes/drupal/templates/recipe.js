@@ -32,18 +32,17 @@ const RecipePage = ({ data,theme }) => {
 	return (
 		<Layout>
 			<SEO title={data.recipes.title} />
-			<Heading>
+			<Heading bg="#2F2A2A" fg="#FFF">
 				<Link
 					to="/"
 					style={{
-						color: theme.colors.primary,
+						color: "#fff",
 						textDecoration: `none`,
 						fontFamily: theme.fonts.heading,
 						margin: theme.pageMargin,
-						textShadow: '3px 3px 3px #fff'
 					}}
 				>
-					Home
+					GATSBY<span style={{ color: '#FFD700' }}> RECIPEZE</span>
 				</Link>
 			</Heading>
 			<RecipeTemplate data={recipeData} />

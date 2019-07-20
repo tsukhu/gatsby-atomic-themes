@@ -124,10 +124,10 @@ const HeaderSection = ({ theme }) => {
 						<section>
 							<HeaderImage />
 							<h1 css={[headerTitle(theme), animatePopIn]}>
-								Your awesome landing page
+								GATSBY<span style={{ color: '#FFD700' }}> RECIPEZE</span>
 							</h1>
 							<h3 css={[headerSubtitle(theme), animatePopIn]}>
-								A useful start for your projects
+								Let's talk gatsby recipes
 							</h3>
 						</section>
 					</header>
