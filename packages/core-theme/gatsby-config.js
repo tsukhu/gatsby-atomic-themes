@@ -39,6 +39,7 @@ module.exports = themeOptions => {
 					start_url: config.pathPrefix,
 					background_color: config.background_color,
 					theme_color: config.theme_color,
+					display: 'standalone',
 					icon: path.join(__dirname, `src`, `images`, `gatsby-icon.png`),
 				},
 			},
