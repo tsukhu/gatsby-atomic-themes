@@ -39,7 +39,6 @@ const RecipeTemplate = ({ data, theme }) => {
 		instructions,
 		childImageSharp
 	} = data;
-	console.log(theme);
 	return (
 		<Container column margin={theme.space[1]}>
 			<div css={receipeContainer(theme)}>
