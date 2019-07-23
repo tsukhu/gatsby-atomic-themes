@@ -1,4 +1,4 @@
 [build]
   base = "packages/drupal-app"
-  command = "yarn build"
+  command = "npm build"
   publish = "packages/drupal-app/public"
