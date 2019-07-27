@@ -92,6 +92,10 @@ The demo sites built using this monorepo are available
 		theme: PropTypes.object.isRequired
 	};
 	```
+	
+	Also take advantage of knowing what to expect in terms of the query output
+
+![VS Code PropTypes Check](./images/queryPropTypes.png)
 
 - `Separation of GraphQL Queries from the component rendering`
 	- In the application that use ising this theme , implement the two template pages as shadow components (Index , Recipe as mentioned above).
