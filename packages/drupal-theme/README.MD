@@ -7,6 +7,18 @@ The drupal theme sets up the configuration for drupal
 - Currently there are two template page queries available
 	1) [Landing Page Query](https://github.com/ERS-HCL/gatsby-atomic-themes/blob/master/packages/drupal-theme/src/templates/index.js) - List of all the recipes
 	2) [Recipe Template Page Query](https://github.com/ERS-HCL/gatsby-atomic-themes/blob/master/packages/drupal-theme/src/templates/recipe.js) - Specific Recipe details based on the id
+- As part of this we also have proptype definitions that can be imported into the template that wants to use the query. In the above mentioned GraphQL queries the prop type definition files
+	1) [Landing Page Query PropTypes](https://github.com/ERS-HCL/gatsby-atomic-themes/blob/master/packages/drupal-theme/src/metadata/all-recipes.js)
+	2) [Recipe Template Page Query PropTypes](https://github.com/ERS-HCL/gatsby-atomic-themes/blob/master/packages/drupal-theme/src/metadata/recipe.js)
+	You can then use the proptypes directly in the template implementation by importing them
+
+	```javascript
+	import { AllRecipesPropTypes } from '@gatsby-themes/drupal';
+	IndexPage.propTypes = {
+		data: AllRecipesPropTypes, // Query prop types
+		theme: PropTypes.object.isRequired
+	};
+	```
 
 ## How to use
 

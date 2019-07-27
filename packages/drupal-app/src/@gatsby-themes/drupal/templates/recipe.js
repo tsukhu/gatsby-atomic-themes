@@ -1,9 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Layout, SEO } from '@gatsby-themes/core';
 import { Link } from 'gatsby';
 import { withTheme } from 'emotion-theming';
 import { Heading } from '@gatsby-themes/emotion-recipe-theme';
 import { RecipeTemplate } from '@gatsby-themes/emotion-recipe-theme';
+import { RecipePropTypes } from '@gatsby-themes/drupal';
 
 const RecipePage = ({ data,theme }) => {
 	const { recipes } = data;
@@ -49,5 +51,11 @@ const RecipePage = ({ data,theme }) => {
 		</Layout>
 	);
 };
+
+RecipePage.propTypes = {
+	data: RecipePropTypes,
+	theme: PropTypes.object.isRequired
+};
+
 
 export default withTheme(RecipePage);
