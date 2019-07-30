@@ -79,3 +79,5 @@ return (
 ```
 
 [okta-app with sample code](https://github.com/ERS-HCL/gatsby-atomic-themes/blob/master/packages/okta-app)
+
+- The demo is available [here](https://okta-theme.netlify.com/)
