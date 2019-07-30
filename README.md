@@ -108,6 +108,8 @@ The demo sites built using this monorepo are available
 - Name: `@gatsby-themes/okta`
 - Usecase(s): `Pre-configured libraries`,
 - The okta theme sets up the okta integration using the okta sign in widget
+- Read the detailed setup instructions [in the okta-theme](https://github.com/ERS-HCL/gatsby-atomic-themes/tree/master/packages/okta-theme)
+- The demo is available [here](https://okta-theme.netlify.com/)
 
 
 ### Material-UI & Emotion Demo App
