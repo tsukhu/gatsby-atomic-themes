@@ -103,6 +103,12 @@ The demo sites built using this monorepo are available
 	- Only implement the Page rendering logic in the application (The data object from the shadows templates will be avaiable to use)
 		- See the example templates in the [drupal-app](https://github.com/ERS-HCL/gatsby-atomic-themes/tree/master/packages/drupal-app) for more details.
 
+### Gatsby Okta Theme
+
+- Name: `@gatsby-themes/okta`
+- Usecase(s): `Pre-configured libraries`,
+- The okta theme sets up the okta integration using the okta sign in widget
+
 
 ### Material-UI & Emotion Demo App
 
