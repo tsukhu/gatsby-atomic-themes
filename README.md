@@ -111,6 +111,7 @@ The demo sites built using this monorepo are available
 - Read the detailed setup instructions [in the okta-theme](https://github.com/ERS-HCL/gatsby-atomic-themes/tree/master/packages/okta-theme)
 - The demo is available [here](https://okta-theme.netlify.com/)
 
+![Okta App](./images/okta.PNG)
 
 ### Material-UI & Emotion Demo App
 
