@@ -1,0 +1,43 @@
+{
+	"name": "okta-app",
+	"version": "1.0.0",
+	"description": "Demo application consuming the okta, core and mui themes",
+	"main": "gatsby-config.js",
+	"author": "Tarun Kumar Sukhu",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"develop": "gatsby develop",
+		"build": "gatsby build"
+	},
+	"keywords": [
+		"gatsby",
+		"gatsby-app"
+	],
+	"dependencies": {
+		"@emotion/core": "^10.0.14",
+		"@emotion/styled": "^10.0.14",
+		"@gatsby-themes/core": "*",
+		"@gatsby-themes/mui": "*",
+		"@gatsby-themes/okta": "*",
+		"@material-ui/core": "^4.2.0",
+		"@material-ui/icons": "3.0.2",
+		"@material-ui/styles": "^4.2.0",
+		"gatsby": "^2.13.21",
+		"gatsby-image": "^2.2.6",
+		"gatsby-plugin-emotion": "^4.0.7",
+		"gatsby-plugin-manifest": "^2.2.0",
+		"gatsby-plugin-material-ui": "^2.1.4",
+		"gatsby-plugin-offline": "^2.2.0",
+		"gatsby-plugin-react-helmet": "^3.1.0",
+		"gatsby-plugin-sharp": "^2.2.1",
+		"gatsby-source-filesystem": "^2.1.0",
+		"gatsby-transformer-sharp": "^2.2.0",
+		"@okta/okta-signin-widget": "^3.0.6",
+		"dotenv": "^8.0.0",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1"
+	}
+}

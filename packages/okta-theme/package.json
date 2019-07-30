@@ -1,0 +1,45 @@
+{
+	"name": "@gatsby-themes/okta",
+	"description": "Okta Integration for Gatsby",
+	"version": "1.0.1",
+	"author": "Tarun Kumar Sukhu <tksukhu@gmail.com>",
+	"main": "index.js",
+	"dependencies": {
+		"@okta/okta-signin-widget": "^3.0.6",
+		"dotenv": "^8.0.0",
+		"gatsby": "^2.13.21",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1"
+	},
+	"peerDependencies": {
+		"@okta/okta-signin-widget": "^3.0.6",
+		"dotenv": "^8.0.0",
+		"gatsby": "^2.13.21",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6",
+		"react-helmet": "^5.2.1"
+	},
+	"devDependencies": {
+		"prettier": "^1.17.1"
+	},
+	"keywords": [
+		"gatsby",
+		"gatsby-theme"
+	],
+	"license": "MIT",
+	"scripts": {
+		"build": "gatsby build",
+		"develop": "gatsby develop",
+		"format": "prettier --write src/**/*.{js,jsx}"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ERS-HCL/gatsby-atomic-themes"
+	},
+	"bugs": {
+		"url": "https://github.com/ERS-HCL/gatsby-atomic-themes/issues"
+	}
+}
