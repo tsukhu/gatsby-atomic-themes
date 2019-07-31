@@ -8,8 +8,24 @@ import {
 	headerSubtitle,
 	HeaderImage
 } from '@gatsby-themes/emotion-recipe-theme';
+import chervonImage from '../../../images/chevron-arrow.png';
 
-export const headerStyle = (image,background) => css`
+export const headerDownArrow = css`
+	animation: pulse 2s 3s ease-out forwards;
+	position: absolute;
+	bottom: 4vh;
+	left: 0;
+	right: 0;
+	text-align: center;
+	z-index: 10;
+
+	& img {
+		animation: fade-slide-up 1s 1s ease-out forwards;
+		opacity: 0;
+	}
+`;
+
+export const headerStyle = (image, background) => css`
 	align-items: center;
 	display: flex;
 	font-size: 18px;
@@ -97,6 +113,28 @@ export const headerStyle = (image,background) => css`
 		}
 	}
 
+	@keyframes fade-slide-up {
+		0% {
+			opacity: 0;
+			transform: translateY(4rem);
+		}
+		100% {
+			opacity: 1;
+			transform: translateY(none);
+		}
+	}
+
+	@keyframes pulse {
+		0% {
+			opacity: 1;
+			transform: none;
+		}
+		100% {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
 	@keyframes rotate-up {
 		100% {
 			transform: rotateZ(-4deg);
@@ -120,7 +158,12 @@ const HeaderSection = ({ theme }) => {
 			`}
 			render={(data) => (
 				<React.Fragment>
-					<header css={headerStyle(data.placeholderImage.childImageSharp.fluid.src, theme.colors.background)}>
+					<header
+						css={headerStyle(
+							data.placeholderImage.childImageSharp.fluid.src,
+							theme.colors.background
+						)}
+					>
 						<section>
 							<HeaderImage />
 							<h1 css={[headerTitle(theme), animatePopIn]}>
@@ -129,6 +172,9 @@ const HeaderSection = ({ theme }) => {
 							<h3 css={[headerSubtitle(theme), animatePopIn]}>
 								Let's talk gatsby recipes
 							</h3>
+						</section>
+						<section css={headerDownArrow}>
+							<img src={chervonImage} width="50" />
 						</section>
 					</header>
 				</React.Fragment>
