@@ -174,7 +174,7 @@ const HeaderSection = ({ theme }) => {
 							</h3>
 						</section>
 						<section css={headerDownArrow}>
-							<img src={chervonImage} width="50" />
+							<img src={chervonImage} width="50" alt="chevron image"/>
 						</section>
 					</header>
 				</React.Fragment>
