@@ -167,6 +167,12 @@ yarn workspace @gatsby-themes/mui storybook
 yarn workspace @gatsby-themes/emotion storybook
 ```
 
+### Tailwind
+
+```bash
+yarn workspace @gatsby-themes/tailwind storybook
+```
+
 ### Emotion Recipe
 
 ```bash
