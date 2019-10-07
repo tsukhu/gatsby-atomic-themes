@@ -1,0 +1,50 @@
+{
+	"name": "@gatsby-themes/tailwind",
+	"version": "1.0.0",
+	"description": "Tailwind Theme for GatsbyJS",
+	"main": "index.js",
+	"author": "Tarun Kumar Sukhu <tksukhu@gmail.com>",
+	"license": "MIT",
+	"dependencies": {
+		"gatsby": "^2.15.29",
+		"gatsby-plugin-compile-es6-packages": "^2.1.0",
+		"gatsby-plugin-postcss": "^2.1.10",
+		"gatsby-plugin-purgecss": "^4.0.1",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	},
+	"peerDependencies": {
+		"gatsby": "^2.15.29",
+		"prop-types": "^15.7.2",
+		"react": "^16.8.6",
+		"react-dom": "^16.8.6"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.4",
+		"@storybook/addon-actions": "^5.2.1",
+		"@storybook/addon-links": "^5.2.1",
+		"@storybook/addons": "^5.2.1",
+		"@storybook/react": "^5.2.1",
+		"babel-loader": "^8.0.6",
+		"babel-plugin-remove-graphql-queries": "^2.7.2",
+		"cross-env": "^5.2.0",
+		"prettier": "^1.17.1",
+		"tailwindcss": "^1.1.2"
+	},
+	"scripts": {
+		"storybook": "cross-env NODE_ENV=production start-storybook -p 6006 -s static",
+		"build-storybook": "cross-env NODE_ENV=production build-storybook -s static"
+	},
+	"keywords": [
+		"gatsby",
+		"gatsby-theme"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ERS-HCL/gatsby-atomic-themes"
+	},
+	"bugs": {
+		"url": "https://github.com/ERS-HCL/gatsby-atomic-themes/issues"
+	}
+}

@@ -13,6 +13,7 @@ module.exports = {
 			}
 		},
 		'@gatsby-themes/mui',
-		'@gatsby-themes/emotion'
+		'@gatsby-themes/emotion',
+		'@gatsby-themes/tailwind'
 	]
 };
