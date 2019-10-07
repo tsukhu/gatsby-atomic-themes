@@ -25,7 +25,7 @@ The drupal theme sets up the configuration for drupal
 - Add the dependency `@gatsby-themes/drupal`
 - The drupal theme will warn of the peer dependencies which also must be added to the gatsby site leveraging this theme.
 - The depenendies include
-	- "gatsby": "^2.13.21",
+	- "gatsby": "^2.15.29",
 	- "gatsby-source-drupal": "^3.1.11"
 
 

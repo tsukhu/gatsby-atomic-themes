@@ -15,7 +15,7 @@ The okta theme sets up the okta integration.
 
 - The core theme will warn of the peer dependencies which also must be added to the gatsby site leveraging this theme.
 - The dependencies include: 
-	- "gatsby": "^2.13.21" 
+	- "gatsby": "^2.15.29" 
 	- "@okta/okta-signin-widget": "^3.0.6"
 	- "dotenv": "^8.0.0"
 

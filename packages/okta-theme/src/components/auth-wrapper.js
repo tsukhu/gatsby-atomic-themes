@@ -50,6 +50,7 @@ class AuthWrapper extends React.Component {
 		}
 	}
 
+
 	validateUser = () => {
 		if (typeof this.widget === 'undefined') return;
 		this.widget.authClient.session.exists().then(
@@ -60,6 +61,7 @@ class AuthWrapper extends React.Component {
 					this.widget.authClient.session
 						.get()
 						.then(res => {
+							console.log(res);
 							// logged in
 							this.setState({
 								user: typeof res.login !== 'undefined' ? res.login : false,

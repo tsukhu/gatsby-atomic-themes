@@ -12,15 +12,15 @@
 		"gatsby-theme"
 	],
 	"dependencies": {
-		"gatsby": "^2.13.21",
-		"gatsby-plugin-compile-es6-packages": "^1.1.0",
+		"gatsby": "^2.15.29",
+		"gatsby-plugin-compile-es6-packages": "^2.1.0",
 		"gatsby-source-drupal": "^3.1.12",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6"
 	},
 	"peerDependencies": {
-		"gatsby": "^2.13.21",
+		"gatsby": "^2.15.29",
 		"gatsby-source-drupal": "^3.1.11",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
