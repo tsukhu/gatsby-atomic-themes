@@ -62,6 +62,12 @@ The demo sites built using this monorepo are available
 - This uses `theme-ui` as the theming style system
 - This also is a core / component UI library of EmotionJS components. As an example a sample UI component has been added called `About`
 
+### Gatsby Tailwind Theme
+
+- Name: `@gatsby-themes/tailwind`
+- Usecase(s): `Pre-configured libraries`,
+- The tailwind theme sets up the tailwind configuration along with purgeCSS
+
 ### Gatsby Recipe Emotion Theme
 
 - Name: `@gatsby-themes/emotion-recipe-theme`
