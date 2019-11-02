@@ -10,8 +10,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import { makeStyles } from '@material-ui/core/styles'
 import Container from '@material-ui/core/Container'
-
-import { Header, Footer } from '@gatsby-themes/mui';
+import { Header, Footer } from '@gatsby-themes/tailwind';
 
 const useStyles = makeStyles({
 	root: {
@@ -39,15 +38,20 @@ const Layout = ({ children }) => {
 				}
 			`}
 			render={data => (
-				<>
+
+				<div class="min-h-screen flex flex-col font-sans">
 					<Header siteTitle={data.site.siteMetadata.title} />
-					<Container maxWidth="md" className={classes.root}>
-						<main>{children}</main>
-					</Container>
-					<footer>
-						<Footer />
-					</footer>
-				</>
+					<div class="flex-grow p-8 text-2xl">
+						
+						<Container maxWidth="md" className={classes.root}>
+							<main>{children}</main>
+						</Container>
+						
+					</div>
+					<Footer />
+					
+				</div>
+
 			)}
 		/>
 	)
