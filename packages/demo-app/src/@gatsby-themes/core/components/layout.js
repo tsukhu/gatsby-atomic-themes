@@ -39,17 +39,17 @@ const Layout = ({ children }) => {
 			`}
 			render={data => (
 
-				<div class="min-h-screen flex flex-col font-sans">
+				<div className="min-h-screen flex flex-col font-sans">
 					<Header siteTitle={data.site.siteMetadata.title} />
-					<div class="flex-grow p-8 text-2xl">
-						
+					<div className="flex-grow p-8 text-2xl">
+
 						<Container maxWidth="md" className={classes.root}>
 							<main>{children}</main>
 						</Container>
-						
+
 					</div>
 					<Footer />
-					
+
 				</div>
 
 			)}
