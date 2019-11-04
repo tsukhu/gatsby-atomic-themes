@@ -2,9 +2,11 @@ import React from 'react';
 import SideBar from './sidebar';
 
 const DisneyLayout = ({ children }) => (
-	<div className="flex bg-gray-900 text-white w-screen min-h-screen">
-		<SideBar />
-		<div className="ml-24">
+	<div className="flex flex-wrap bg-gray-900 text-white min-h-screen">
+		<div className="w-20 fixed min-h-screen flex justify-center items-center ">
+			<SideBar />
+		</div>
+		<div className="ml-20">
 			<div className="container mx-auto">{children}</div>
 		</div>
 	</div>

@@ -3,7 +3,7 @@ import React from 'react';
 // Icons from https://github.com/sschoger/heroicons-ui
 
 const SideBar = () => (
-	<div className="nav w-20 fixed min-h-screen flex justify-center items-center text-gray-50">
+	<div className="nav text-gray-50">
 		<ul>
 			<li className="mb-10">
 				<a href="#" className="text-gray-300 hover:text-white">
