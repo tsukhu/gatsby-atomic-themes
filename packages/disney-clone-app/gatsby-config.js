@@ -12,7 +12,6 @@ module.exports = {
 				pathPrefix: config.pathPrefix
 			}
 		},
-		'@gatsby-themes/mui',
 		'@gatsby-themes/tailwind'
 	]
 };
