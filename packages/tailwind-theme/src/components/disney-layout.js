@@ -6,7 +6,7 @@ const DisneyLayout = ({ children }) => (
 		<div className="w-20 fixed min-h-screen flex justify-center items-center ">
 			<SideBar />
 		</div>
-		<div className="w-full bg-gray-900 ml-20">
+		<div className="w-full bg-gray-900 ml-16">
 			<div className="container mx-auto">{children}</div>
 		</div>
 	</div>

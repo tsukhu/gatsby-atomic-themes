@@ -5,9 +5,9 @@ import Carousel from 'nuka-carousel';
 import landingPage from '../../data/landingPage';
 
 const IndexPage = () => {
-	const [nukaRef,SetNukaRef] = useState(null)
+	const [nukaRef, SetNukaRef] = useState(null);
 	const onImageLoad = () => {
-    nukaRef.onResize();
+		nukaRef.onResize();
 	};
 
 	const categorySection = () => {
@@ -61,6 +61,7 @@ const IndexPage = () => {
 				/>
 			);
 		}
+
 		return (
 			<Carousel
 				slidesToShow={1}
@@ -87,7 +88,7 @@ const IndexPage = () => {
 						className="rounded"
 					/> */}
 				</div>
-				<div className="categories flex items-center mb-12 -mx-4">
+				<div className="categories flex items-center mb-12">
 					{categorySection()}
 				</div>
 				<div className="recommended px-6 mb-12">
