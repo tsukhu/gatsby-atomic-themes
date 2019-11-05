@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import { Layout } from '@gatsby-themes/core';
 import Carousel from 'nuka-carousel';
+import CarouselWrapper from '../components/carousel-wrapper';
 import landingPage from '../../data/landingPage';
 
 const IndexPage = () => {
@@ -31,21 +32,16 @@ const IndexPage = () => {
 	};
 
 	const recommendationSection = () => {
-		const recommendations = [];
-		for (let i = 0; i < landingPage.recommendations.length; i += 1) {
-			recommendations.push(
-				<div className="shadow-xl mr-6" key={`recommendation-${i}`}>
-					<a href="#">
-						<img
-							src={landingPage.recommendations[i].image}
-							alt={landingPage.recommendations[i].imageAlt}
-							className=""
-						/>
-					</a>
-				</div>
-			);
-		}
-		return recommendations;
+		return (
+			<CarouselWrapper
+				slidesToShow={5}
+				dragging={true}
+				cellSpacing={20}
+				renderBottomCenterControls={null}
+				data={landingPage.recommendations}
+				name="recommendations"
+			></CarouselWrapper>
+		);
 	};
 
 	const heroCarousel = () => {
@@ -70,6 +66,40 @@ const IndexPage = () => {
 				ref={(ref) => {
 					SetNukaRef(ref);
 				}}
+/* 				renderCenterLeftControls={({ previousSlide }) => (
+					<div class="text-white">
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							viewBox="0 0 24 24"
+							width="24"
+							height="24"
+							class="fill-current"
+						>
+							<path
+								class="heroicon-ui"
+								d="M5.41 11H21a1 1 0 0 1 0 2H5.41l5.3 5.3a1 1 0 0 1-1.42 1.4l-7-7a1 1 0 0 1 0-1.4l7-7a1 1 0 0 1 1.42 1.4L5.4 11z"
+							/>
+						</svg>
+					</div>
+				)}
+				renderCenterRightControls={({ nextSlide}) => (
+					<div class="text-white">
+						<button onClick={nextSlide}>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								viewBox="0 0 24 24"
+								width="24"
+								height="24"
+								class="fill-current"
+							>
+								<path
+									class="heroicon-ui"
+									d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"
+								/>
+							</svg>
+						</button>
+					</div>
+				)} */
 			>
 				{slides}
 			</Carousel>
@@ -93,6 +123,14 @@ const IndexPage = () => {
 				</div>
 				<div className="recommended px-6 mb-12">
 					<h2 className="text-gray-500 mb-1">Recommended For You</h2>
+					<div className="flex items-center">{recommendationSection()}</div>
+				</div>
+				<div className="recommended px-6 mb-12">
+					<h2 className="text-gray-500 mb-1">Continue Watching</h2>
+					<div className="flex items-center">{recommendationSection()}</div>
+				</div>
+				<div className="recommended px-6 mb-12">
+					<h2 className="text-gray-500 mb-1">Disney Originals</h2>
 					<div className="flex items-center">{recommendationSection()}</div>
 				</div>
 			</div>
