@@ -10,8 +10,8 @@ The mui theme sets up the configuration based on the best practices recommended 
 - Add the dependency `@gatsby-themes/mui`
 - The mui theme will warn of the peer dependencies which also must be added to the gatsby site leveraging this theme.
 - The dependencies include
-	- "@material-ui/core": "^4.2.0",
-	- "@material-ui/styles": "^4.2.0",
+	- "@material-ui/core": "^4.5.2",
+	- "@material-ui/styles": "^4.5.2",
 	- "gatsby-plugin-material-ui": "^2.1.4",
 
 
