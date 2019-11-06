@@ -10,25 +10,14 @@ module.exports = (themeOptions) => {
 					modules: ['@gatsby-themes/tailwind']
 				}
 			},
-			{
-				resolve: `gatsby-plugin-postcss`,
-				options: {
-					postCssPlugins: [
-						tailwindcss(path.join(__dirname, `tailwind.config.js`)),
-						require('tailwindcss'),
-						require('autoprefixer')
-					]
-				}
-			},
-			// Add after these plugins if used
-			{
+			`gatsby-plugin-postcss`,
+/* 			{
 				resolve: `gatsby-plugin-purgecss`,
 				options: {
-					printRejected: false,
-					develop: false,
-					tailwind: true
+					tailwind: true,
+					purgeOnly: [path.join(__dirname, `src`,`css`,`style.css`)]
 				}
-			}
+			} */
 		]
 	};
 };

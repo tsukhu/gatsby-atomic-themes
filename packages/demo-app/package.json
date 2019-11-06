@@ -8,7 +8,8 @@
 	"private": true,
 	"scripts": {
 		"develop": "gatsby develop",
-		"build": "gatsby build"
+		"build": "gatsby build",
+		"clean": "gatsby clean"
 	},
 	"keywords": [
 		"gatsby",
@@ -39,6 +40,7 @@
 		"@gatsby-themes/tailwind": "*",
 		"gatsby-plugin-postcss": "^2.1.10",
 		"gatsby-plugin-purgecss": "^4.0.1",
-		"tailwindcss": "^1.1.2"
+		"tailwindcss": "^1.1.2",
+		"cssnano": "^4.1.10"
 	}
 }

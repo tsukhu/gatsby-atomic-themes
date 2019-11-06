@@ -1,6 +1,5 @@
 
 import React, { useState } from 'react';
-import '../styles/tailwind.css';
 import { Layout } from '@gatsby-themes/core';
 import Carousel from 'nuka-carousel';
 import CarouselWrapper from '../components/carousel-wrapper';

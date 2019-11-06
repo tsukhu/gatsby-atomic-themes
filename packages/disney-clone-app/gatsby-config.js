@@ -12,6 +12,6 @@ module.exports = {
 				pathPrefix: config.pathPrefix
 			}
 		},
-		'@gatsby-themes/tailwind'
+		'@gatsby-themes/tailwind',
 	]
 };
