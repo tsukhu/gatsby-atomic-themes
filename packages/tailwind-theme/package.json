@@ -8,6 +8,7 @@
 	"dependencies": {
 		"cssnano": "^4.1.10",
 		"gatsby": "^2.15.29",
+		"nuka-carousel": "^4.5.12",
 		"gatsby-plugin-compile-es6-packages": "^2.1.0",
 		"gatsby-plugin-postcss": "^2.1.10",
 		"gatsby-plugin-purgecss": "^4.0.1",
@@ -19,7 +20,8 @@
 		"gatsby": "^2.15.29",
 		"prop-types": "^15.7.2",
 		"react": "^16.8.6",
-		"react-dom": "^16.8.6"
+		"react-dom": "^16.8.6",
+		"nuka-carousel": "^4.5.12"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.5.4",

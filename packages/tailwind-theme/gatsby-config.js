@@ -11,13 +11,17 @@ module.exports = (themeOptions) => {
 				}
 			},
 			`gatsby-plugin-postcss`,
-/* 			{
+			{
 				resolve: `gatsby-plugin-purgecss`,
 				options: {
 					tailwind: true,
-					purgeOnly: [path.join(__dirname, `src`,`css`,`style.css`)]
+				//	develop: true,
+					content: [
+						path.join(__dirname, '!(*.d).{ts,js,jsx,tsx}'),
+						path.join(__dirname, 'src/**/!(*.d).{ts,js,jsx,tsx}'),
+					],
 				}
-			} */
+			}
 		]
 	};
 };
