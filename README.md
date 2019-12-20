@@ -29,6 +29,7 @@ The demo sites built using this monorepo are available
 ![Drupal Index Page](./images/recipe_index.PNG)
 ![Drupal Detailed Page](./images/recipe.PNG)
 
+- The demo for the [Disney Clone using Gatsby Tailwind Theme](https://disney-clone-gatsby.netlify.com/)
 ## Structure
 
 1. Yarn workspaces used so that we are able to maintain the Gatsby infrastructure pieces as atomic themes all in one place. This also gives us the ability to see the changes like using the application workspaces without having to go through the entire process of publishing the npm module and then testing whether it works.
